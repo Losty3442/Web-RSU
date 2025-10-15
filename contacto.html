@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - DRSU</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="icon-sidebar" id="iconSidebar">
+        <button class="sidebar-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <a href="main.html" class="sidebar-icon-item active" title="Inicio">
+            <i class="fas fa-home"></i>
+        </a>
+    </div>
+
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-content">
+            <button class="menu-close" id="menuClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav class="menu-nav">
+                <!-- Inicio -->
+                <a href="#inicio" class="menu-item">
+                    <i class="fas fa-home"></i> Inicio
+                </a>
+
+                <!-- Nosotros -->
+                <div class="menu-item-dropdown">
+                    <button class="menu-item dropdown-toggle">
+                        <span><i class="fas fa-users"></i> Nosotros</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="submenu">
+                        <a href="/nosotros/que-es-rsu.html"><i class="fas fa-question-circle"></i> ¿Qué es RSU?</a>
+                        <a href="/nosotros/mision.html"><i class="fas fa-bullseye"></i> Misión</a>
+                        <a href="/nosotros/vision.html"><i class="fas fa-eye"></i> Visión</a>
+                        <a href="/nosotros/ubicacion.html"><i class="fas fa-map-marker-alt"></i> Ubicación</a>
+                        <a href="/nosotros/equipo.html"><i class="fas fa-user-friends"></i> Equipo de la DRSU</a>
+                        <a href="/nosotros/alianzas.html"><i class="fas fa-handshake"></i> Alianzas Estratégicas</a>
+                    </div>
+                </div>
+
+                <!-- Documento de Gestión -->
+            <div class="menu-item-dropdown">
+                <button class="menu-item dropdown-toggle">
+                    <span><i class="fas fa-file-alt"></i> Documento de Gestión</span>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </button>
+                <div class="submenu">
+                    <a href="/documentos-gestion/reconocimiento.html"><i class="fas fa-award"></i> Reconocimiento</a>
+                    <a href="/documentos-gestion/reglamento.html"><i class="fas fa-book"></i> Reglamento RSU</a>
+                    <a href="/documentos-gestion/poi.html"><i class="fas fa-clipboard-list"></i> POI-RSU</a>
+                    <a href="/documentos-gestion/plan-anual.html"><i class="fas fa-calendar-alt"></i> Plan Anual</a>
+                </div>
+            </div>
+
+                <!-- Herramientas -->
+                <div class="menu-item-dropdown">
+                    <button class="menu-item dropdown-toggle">
+                        <span><i class="fas fa-tools"></i> Herramientas</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="submenu">
+                        <a href="/herramientas/cursos.html"><i class="fas fa-graduation-cap"></i> Cursos</a>
+                        <a href="/herramientas/video.html"><i class="fas fa-video"></i> Videos</a>
+                        <a href="/herramientas/presentaciones.html"><i class="fas fa-film"></i> Presentaciones</a>
+                    </div>
+                </div>
+
+                <!-- Actividades -->
+                <div class="menu-item-dropdown">
+                    <button class="menu-item dropdown-toggle">
+                        <span><i class="fas fa-calendar-check"></i> Actividades</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="submenu">
+                        <div class="submenu-nested">
+                            <button class="submenu-item-toggle">
+                                <span><i class="fas fa-university"></i> Eventos Académicos</span>
+                                <i class="fas fa-chevron-right arrow-small"></i>
+                            </button>
+                            <div class="submenu-level-2">
+                                <a href="/actividades/viii-enarsu.html"><i class="fas fa-certificate"></i> VIII ENARSU</a>
+                            </div>
+                        </div>
+                        <a href="/actividades/actividades-rsu.html"><i class="fas fa-tasks"></i> Actividades RSU</a>
+                        <a href="/actividades/iniciativas-drsu.html"><i class="fas fa-lightbulb"></i> Iniciativas DRSU</a>
+                        <a href="/actividades/proyectos-drsu.html"><i class="fas fa-project-diagram"></i> Proyectos DRSU</a>
+                    </div>
+                </div>
+
+                <!-- Voluntariado UNP -->
+                <div class="menu-item-dropdown">
+                    <button class="menu-item dropdown-toggle">
+                        <span><i class="fas fa-hands-helping"></i> Voluntariado UNP</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="submenu">
+                        <a href="#que-es-voluntariado"><i class="fas fa-info-circle"></i> Qué es voluntariado</a>
+                        <a href="#inscribete"><i class="fas fa-user-plus"></i> Inscríbete</a>
+                        <a href="#voluntarios"><i class="fas fa-users"></i> Nuestros voluntarios</a>
+                        <a href="#convocatorias"><i class="fas fa-bullhorn"></i> Convocatorias</a>
+                    </div>
+                </div>
+
+                <!-- Noticias -->
+                <a href="#noticias" class="menu-item">
+                    <i class="fas fa-newspaper"></i> Noticias
+                </a>
+
+                <!-- Contacto -->
+                <a href="#contacto" class="menu-item">
+                    <i class="fas fa-envelope"></i> Contacto
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <header>
+            <div class="header-container h-m">
+                <div class="logo">
+                    <img src="/images/logo.png" alt="Logo DRSU"> <!-- Ruta ajustada para logo -->
+                    <p>DRSU</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </header>
+
+
+
+        <section id="contacto" style="padding-bottom: 20px;">
+            <h1 class="section-main-title q-rsu" style="margin-bottom: 2.5rem;">Contáctanos</h1>
+            <div class="contact-container">
+                <div class="contact-form-wrapper" data-aos="fade-right">
+                    <div class="contact-form-header">
+                        <div class="form-header-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <h2>Envíanos un mensaje</h2>
+                        <p>Comparte información sobre nuestras y/o necesitamos en un plazo no mayor de 48 horas.</p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre <span class="required">*</span></label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido <span class="required">*</span></label>
+                                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="asunto">Asunto <span class="required">*</span></label>
+                            <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje <span class="required">*</span></label>
+                            <textarea id="mensaje" name="mensaje" rows="6" placeholder="Ingrese su mensaje"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar mensaje
+                        </button>
+
+                        <p class="form-note">
+                            <i class="fas fa-shield-alt"></i>
+                            Protegemos tu <a href="#">Privacidad</a>
+                        </p>
+                    </form>
+                </div>
+
+                <div class="contact-info-wrapper" data-aos="fade-left">
+
+                    <div class="contact-info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Ubícanos en</h3>
+                        <div class="info-details">
+                            <p><strong>Dirección:</strong> Jr. Callao N°247 - Piura</p>
+                            <p><strong>E-mail:</strong> <a href="mailto:drsu2023unp@gmail.com">drsu2023unp@gmail.com</a>
+                            </p>
+                            <p><strong>Teléfono:</strong> <a href="tel:+51073300357">(073) 300357 - 323455</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15878.681604135546!2d-80.64757315!3d-5.19793105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902f928e0b0e5b7b%3A0x6b77202b2b115b80!2sJr.%20Callao%20247%2C%20Piura%2020001%2C%20Per%C3%BA!5e0!3m2!1ses!2s!4v1700000000000!5m2!1ses!2s"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Horario de Atención</h3>
+                        <div class="info-details">
+                            <p><strong>Lunes a Viernes:</strong> 8:00 AM - 5:00 PM</p>
+                            <p><strong>Sábados:</strong> 9:00 AM - 1:00 PM</p>
+                            <p><strong>Domingos:</strong> Cerrado</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h3>Síguenos en nuestras redes</h3>
+                        <div class="social-links-contact">
+                            <a href="#" class="social-link-item facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="social-link-item instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-link-item twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#" class="social-link-item youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3><i class="fas fa-map-marker-alt"></i> Contacto</h3>
+                    <p><i class="fas fa-building"></i> Dirección: Jr.Callao Nº247.Piura</p>
+                    <p><i class="fas fa-phone"></i> Teléfono: (073) 300357 - 323455</p>
+                    <p><i class="fas fa-envelope"></i> Correo: drsu2023unp@gmail.com</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3><i class="fas fa-link"></i> Enlaces Rápidos</h3>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Admisión</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Carreras pregrado</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Estudios de posgrado</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Investigación</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Cultura</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3><i class="fas fa-star"></i> Interés</h3>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Vicerrectorado de investigación</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Vicerrectorado Académico</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Oficina de Educación Virtual</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Calidad Académica</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3><i class="fas fa-shield-alt"></i> Transparencia</h3>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Libro de reclamaciones</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Atención de Denuncias</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Portal de transparencia</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Mapa de sitio</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Universidad Nacional De Piura - DRSU. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Validación y envío del formulario (código existente)
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Aquí puedes agregar la lógica de envío
+            const formData = {
+                nombre: document.getElementById('nombre').value,
+                apellido: document.getElementById('apellido').value,
+                email: document.getElementById('email').value,
+                asunto: document.getElementById('asunto').value,
+                mensaje: document.getElementById('mensaje').value
+            };
+
+            console.log('Formulario enviado:', formData);
+
+            // Mostrar mensaje de éxito
+            alert('¡Gracias por contactarnos! Te responderemos en un plazo de 48 horas.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

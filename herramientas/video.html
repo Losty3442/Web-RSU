@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - DRSU</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+    <div class="icon-sidebar" id="iconSidebar">
+        <button class="sidebar-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <a href="../main.html" class="sidebar-icon-item" title="Inicio">
+            <i class="fas fa-home"></i>
+        </a>
+        <a href="cursos.html" class="sidebar-icon-item" title="Cursos">
+            <i class="fas fa-graduation-cap"></i>
+        </a>
+        <a href="video.html" class="sidebar-icon-item active" title="Videos">
+            <i class="fas fa-video"></i>
+        </a>
+        <a href="presentaciones.html" class="sidebar-icon-item" title="Presentaciones">
+            <i class="fas fa-film"></i>
+        </a>
+    </div>
+
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-content">
+            <button class="menu-close" id="menuClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav class="menu-nav">
+                <a href="main.html" class="menu-item">
+                    <i class="fas fa-home"></i> Inicio
+                </a>
+
+                <div class="menu-item-dropdown">
+                    <button class="menu-item dropdown-toggle">
+                        <span><i class="fas fa-users"></i> Nosotros</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="submenu">
+                        <a href="/nosotros/que-es-rsu.html"><i class="fas fa-question-circle"></i> ¿Qué es RSU?</a>
+                        <a href="/nosotros/mision.html"><i class="fas fa-bullseye"></i> Misión</a>
+                        <a href="/nosotros/vision.html"><i class="fas fa-eye"></i> Visión</a>
+                        <a href="/nosotros/ubicacion.html"><i class="fas fa-map-marker-alt"></i> Ubicación</a>
+                        <a href="/nosotros/equipo.html"><i class="fas fa-user-friends"></i> Equipo de la DRSU</a>
+                        <a href="/nosotros/alianzas.html"><i class="fas fa-handshake"></i> Alianzas Estratégicas</a>
+                    </div>
+                </div>
+
+                <div class="menu-item-dropdown">
+                    <button class="menu-item dropdown-toggle">
+                        <span><i class="fas fa-file-alt"></i> Documento de Gestión</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="submenu">
+                        <a href="/documentos-gestion/reconocimiento.html"><i class="fas fa-award"></i>
+                            Reconocimiento</a>
+                        <a href="/documentos-gestion/reglamento.html"><i class="fas fa-book"></i> Reglamento RSU</a>
+                        <a href="/documentos-gestion/poi.html"><i class="fas fa-clipboard-list"></i> POI-RSU</a>
+                        <a href="/documentos-gestion/plan-anual.html"><i class="fas fa-calendar-alt"></i> Plan Anual</a>
+                    </div>
+                </div>
+
+                <div class="menu-item-dropdown">
+                    <button class="menu-item dropdown-toggle">
+                        <span><i class="fas fa-tools"></i> Herramientas</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="submenu">
+                        <a href="cursos.html"><i class="fas fa-graduation-cap"></i> Cursos</a>
+                        <a href="video.html"><i class="fas fa-video"></i> Videos</a>
+                        <a href="presentaciones.html"><i class="fas fa-film"></i> Presentaciones</a>
+                    </div>
+                </div>
+
+                <div class="menu-item-dropdown">
+                    <button class="menu-item dropdown-toggle">
+                        <span><i class="fas fa-calendar-check"></i> Actividades</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="submenu">
+                        <div class="submenu-nested">
+                            <button class="submenu-item-toggle">
+                                <span><i class="fas fa-university"></i> Eventos Académicos</span>
+                                <i class="fas fa-chevron-right arrow-small"></i>
+                            </button>
+                            <div class="submenu-level-2">
+                                <a href="/actividades/viii-enarsu.html"><i class="fas fa-certificate"></i> VIII ENARSU</a>
+                            </div>
+                        </div>
+                        <a href="/actividades/actividades-rsu.html"><i class="fas fa-tasks"></i> Actividades RSU</a>
+                        <a href="/actividades/iniciativas-drsu.html"><i class="fas fa-lightbulb"></i> Iniciativas DRSU</a>
+                        <a href="/actividades/proyectos-drsu.html"><i class="fas fa-project-diagram"></i> Proyectos DRSU</a>
+                    </div>
+                </div>
+
+                <div class="menu-item-dropdown">
+                    <button class="menu-item dropdown-toggle">
+                        <span><i class="fas fa-hands-helping"></i> Voluntariado UNP</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="submenu">
+                        <a href="#que-es-voluntariado"><i class="fas fa-info-circle"></i> Qué es voluntariado</a>
+                        <a href="#inscribete"><i class="fas fa-user-plus"></i> Inscríbete</a>
+                        <a href="#voluntarios"><i class="fas fa-users"></i> Nuestros voluntarios</a>
+                        <a href="#convocatorias"><i class="fas fa-bullhorn"></i> Convocatorias</a>
+                    </div>
+                </div>
+
+                <a href="#noticias" class="menu-item">
+                    <i class="fas fa-newspaper"></i> Noticias
+                </a>
+
+                <a href="contacto.html" class="menu-item">
+                    <i class="fas fa-envelope"></i> Contacto
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="main-wrapper">
+        <header>
+            <div class="header-container h-m">
+                <div class="logo">
+                    <img src="/images/logo.png" alt="Logo DRSU">
+                    <p>DRSU</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <section id="videos" class="section-wrapper bg-light" style="padding-bottom:2rem ;">
+            <div class="section-header text-center">
+                <h2 class="section-main-title q-rsu">Videos</h2>
+                <p class="section-subtitle">Contenido audiovisual sobre nuestras actividades y proyectos</p>
+            </div>
+
+            <div class="videos-container">
+                <div class="videos-layout">
+                    <div class="video-player-wrapper" data-aos="fade-right">
+                        <div class="video-player">
+                            <iframe id="mainVideo" width="560" height="315"
+                                src="https://www.youtube.com/embed/FSdZxphEONU?si=S1n047RclLGsFV8E"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info-box">
+                            <h3 id="videoTitle">Activación del Voluntariado UNP - 2025</h3>
+                            <p id="videoDescription">Participa de nuestra activación de voluntariado el 19 y 20 de mayo
+                                desde las 9:00 a.m. Lugar: Comedor Central y Auditorio Central. ¡Ven y participa! Haz la
+                                diferencia.</p>
+                            <div class="video-meta">
+                                <span><i class="fas fa-eye"></i> 2,345 vistas</span>
+                                <span><i class="fas fa-calendar"></i> 15 May 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-playlist" data-aos="fade-left">
+                        <div class="playlist-header">
+                            <div class="playlist-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <div class="playlist-title-section">
+                                <h3>Lista de reproducción</h3>
+                                <p>6 Videos</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-items">
+                            <div class="playlist-item active"
+                                data-video-url="https://www.youtube.com/embed/FSdZxphEONU?si=S1n047RclLGsFV8E"
+                                data-title="Activación del Voluntariado UNP - 2025"
+                                data-description="Participa de nuestra activación de voluntariado el 19 y 20 de mayo desde las 9:00 a.m."
+                                data-views="2,345" data-date="15 May 2025">
+                                <div class="playlist-item-thumbnail">
+                                    <img src="/images/thumbnail1.jpg" alt="Video 1">
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                    <span class="duration">2:04</span>
+                                </div>
+                                <div class="playlist-item-info">
+                                    <h4>Activación del Voluntariado UNP - 2025</h4>
+                                    <p><i class="fas fa-clock"></i> 2:04</p>
+                                </div>
+                            </div>
+
+                            <div class="playlist-item"
+                                data-video-url="https://www.youtube.com/embed/gIfiW598k2g?si=uSbeUOiuZDtZgHXI"
+                                data-title="Desfile Semana de la Responsabilidad Social Universitaria UNP 2024"
+                                data-description="Revive los mejores momentos del desfile institucional 2024"
+                                data-views="1,892" data-date="10 Oct 2024">
+                                <div class="playlist-item-thumbnail">
+                                    <img src="/images/thumbnail2.jpg" alt="Video 2">
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                    <span class="duration">1:17</span>
+                                </div>
+                                <div class="playlist-item-info">
+                                    <h4>Desfile Semana de la Responsabilidad Social UNP 2024</h4>
+                                    <p><i class="fas fa-clock"></i> 1:17</p>
+                                </div>
+                            </div>
+
+                            <div class="playlist-item"
+                                data-video-url="https://www.youtube.com/embed/R2NdzrionAQ?si=QCVpGBT1HoI0wD8W"
+                                data-title="Conferencia de Prensa sobre RS"
+                                data-description="Conferencia de prensa sobre Responsabilidad Social en la UNP"
+                                data-views="1,567" data-date="05 Sep 2024">
+                                <div class="playlist-item-thumbnail">
+                                    <img src="/images/thumbnail3.jpg" alt="Video 3">
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                    <span class="duration">2:22</span>
+                                </div>
+                                <div class="playlist-item-info">
+                                    <h4>Conferencia de Prensa sobre RS</h4>
+                                    <p><i class="fas fa-clock"></i> 2:22</p>
+                                </div>
+                            </div>
+
+                            <div class="playlist-item"
+                                data-video-url="https://www.youtube.com/embed/jbECzq7o8iE?si=GAGl86aKoLWN_UaN"
+                                data-title="Primera Reunión Interinstitucional de Responsabilidad Social"
+                                data-description="Encuentro con instituciones aliadas para fortalecer la RSU"
+                                data-views="1,234" data-date="20 Ago 2024">
+                                <div class="playlist-item-thumbnail">
+                                    <img src="/images/thumbnail4.jpg" alt="Video 4">
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                    <span class="duration">2:33</span>
+                                </div>
+                                <div class="playlist-item-info">
+                                    <h4>Primera Reunión Interinstitucional de Responsabilidad Social</h4>
+                                    <p><i class="fas fa-clock"></i> 2:33</p>
+                                </div>
+                            </div>
+
+                            <div class="playlist-item"
+                                data-video-url="https://www.youtube.com/embed/jpCdWB_3YHg?si=dbdOIIxzO9zt1cVj"
+                                data-title="Videoconferencia 'Diversidad Biológica de la Región Piura'"
+                                data-description="Conferencia magistral sobre la biodiversidad de nuestra región"
+                                data-views="3,456" data-date="10 Ago 2020">
+                                <div class="playlist-item-thumbnail">
+                                    <img src="/images/thumbnail5.jpg" alt="Video 5">
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                    <span class="duration">1:29:52</span>
+                                </div>
+                                <div class="playlist-item-info">
+                                    <h4>Videoconferencia "Diversidad Biológica de la Región Piura" 10/08/2020</h4>
+                                    <p><i class="fas fa-clock"></i> 1:29:52</p>
+                                </div>
+                            </div>
+
+                            <div class="playlist-item"
+                                data-video-url="https://www.youtube.com/embed/qW9d5TbP-Ig?si=ycjLoyMCzumr8ScL"
+                                data-title="Roles, funciones y competencias de los gobiernos locales"
+                                data-description="Videoconferencia sobre gestión local y responsabilidad social"
+                                data-views="2,789" data-date="25 Jul 2020">
+                                <div class="playlist-item-thumbnail">
+                                    <img src="/images/thumbnail6.jpg" alt="Video 6">
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                    <span class="duration">1:47:46</span>
+                                </div>
+                                <div class="playlist-item-info">
+                                    <h4>Videoconferencia "Roles, funciones y competencias de los gobiernos..."</h4>
+                                    <p><i class="fas fa-clock"></i> 1:47:46</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3><i class="fas fa-map-marker-alt"></i> Contacto</h3>
+                    <p><i class="fas fa-building"></i> Dirección: Jr.Callao Nº247.Piura</p>
+                    <p><i class="fas fa-phone"></i> Teléfono: (073) 300357 - 323455</p>
+                    <p><i class="fas fa-envelope"></i> Correo: drsu2023unp@gmail.com</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3><i class="fas fa-link"></i> Enlaces Rápidos</h3>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Admisión</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Carreras pregrado</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Estudios de posgrado</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Investigación</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Cultura</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3><i class="fas fa-star"></i> Interés</h3>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Vicerrectorado de investigación</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Vicerrectorado Académico</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Oficina de Educación Virtual</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Calidad Académica</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3><i class="fas fa-shield-alt"></i> Transparencia</h3>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Libro de reclamaciones</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Atención de Denuncias</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Portal de transparencia</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Mapa de sitio</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universidad Nacional De Piura - DRSU. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

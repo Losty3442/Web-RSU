@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsabilidad Social - DRSU</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="icon-sidebar" id="iconSidebar">
+        <button class="sidebar-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <a href="#inicio" class="sidebar-icon-item active" title="Inicio">
+            <i class="fas fa-home"></i>
+        </a>
+
+        <a href="#que-hacemos" class="sidebar-icon-item" title="¿Qué hacemos?">
+            <i class="fas fa-lightbulb"></i>
+        </a>
+
+        <a href="#voluntariado" class="sidebar-icon-item" title="Voluntariado">
+            <i class="fas fa-hands-helping"></i>
+        </a>
+
+        <a href="#proyectos" class="sidebar-icon-item" title="Proyectos">
+            <i class="fas fa-project-diagram"></i>
+        </a>
+
+        <a href="#noticias" class="sidebar-icon-item" title="Noticias">
+            <i class="fas fa-newspaper"></i>
+        </a>
+    </div>
+
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-content">
+            <button class="menu-close" id="menuClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav class="menu-nav">
+                <!-- Inicio -->
+                <a href="#inicio" class="menu-item">
+                    <i class="fas fa-home"></i> Inicio
+                </a>
+
+                <!-- Nosotros -->
+                <div class="menu-item-dropdown">
+                    <button class="menu-item dropdown-toggle">
+                        <span><i class="fas fa-users"></i> Nosotros</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="submenu">
+                        <a href="/nosotros/que-es-rsu.html"><i class="fas fa-question-circle"></i> ¿Qué es RSU?</a>
+                        <a href="/nosotros/mision.html"><i class="fas fa-bullseye"></i> Misión</a>
+                        <a href="/nosotros/vision.html"><i class="fas fa-eye"></i> Visión</a>
+                        <a href="/nosotros/ubicacion.html"><i class="fas fa-map-marker-alt"></i> Ubicación</a>
+                        <a href="/nosotros/equipo.html"><i class="fas fa-user-friends"></i> Equipo de la DRSU</a>
+                        <a href="/nosotros/alianzas.html"><i class="fas fa-handshake"></i> Alianzas Estratégicas</a>
+                    </div>
+                </div>
+
+                <!-- Documento de Gestión -->
+                <div class="menu-item-dropdown">
+                    <button class="menu-item dropdown-toggle">
+                        <span><i class="fas fa-file-alt"></i> Documento de Gestión</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="submenu">
+                        <a href="/documentos-gestion/reconocimiento.html"><i class="fas fa-award"></i>
+                            Reconocimiento</a>
+                        <a href="/documentos-gestion/reglamento.html"><i class="fas fa-book"></i> Reglamento RSU</a>
+                        <a href="/documentos-gestion/poi.html"><i class="fas fa-clipboard-list"></i> POI-RSU</a>
+                        <a href="/documentos-gestion/plan-anual.html"><i class="fas fa-calendar-alt"></i> Plan Anual</a>
+                    </div>
+                </div>
+
+                <!-- Herramientas -->
+                <div class="menu-item-dropdown">
+                    <button class="menu-item dropdown-toggle">
+                        <span><i class="fas fa-tools"></i> Herramientas</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="submenu">
+                        <a href="/herramientas/cursos.html"><i class="fas fa-graduation-cap"></i> Cursos</a>
+                        <a href="/herramientas/video.html"><i class="fas fa-video"></i> Videos</a>
+                        <a href="/herramientas/presentaciones.html"><i class="fas fa-film"></i> Presentaciones</a>
+                    </div>
+                </div>
+
+                <!-- Actividades -->
+                <div class="menu-item-dropdown">
+                    <button class="menu-item dropdown-toggle">
+                        <span><i class="fas fa-calendar-check"></i> Actividades</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="submenu">
+                        <div class="submenu-nested">
+                            <button class="submenu-item-toggle">
+                                <span><i class="fas fa-university"></i> Eventos Académicos</span>
+                                <i class="fas fa-chevron-right arrow-small"></i>
+                            </button>
+                            <div class="submenu-level-2">
+                                <a href="/actividades/viii-enarsu.html"><i class="fas fa-certificate"></i> VIII ENARSU</a>
+                            </div>
+                        </div>
+                        <a href="/actividades/actividades-rsu.html"><i class="fas fa-tasks"></i> Actividades RSU</a>
+                        <a href="/actividades/iniciativas-drsu.html"><i class="fas fa-lightbulb"></i> Iniciativas DRSU</a>
+                        <a href="/actividades/proyectos-drsu.html"><i class="fas fa-project-diagram"></i> Proyectos DRSU</a>
+                    </div>
+                </div>
+
+                <!-- Voluntariado UNP -->
+                <div class="menu-item-dropdown">
+                    <button class="menu-item dropdown-toggle">
+                        <span><i class="fas fa-hands-helping"></i> Voluntariado UNP</span>
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="submenu">
+                        <a href="#que-es-voluntariado"><i class="fas fa-info-circle"></i> Qué es voluntariado</a>
+                        <a href="#inscribete"><i class="fas fa-user-plus"></i> Inscríbete</a>
+                        <a href="#voluntarios"><i class="fas fa-users"></i> Nuestros voluntarios</a>
+                        <a href="#convocatorias"><i class="fas fa-bullhorn"></i> Convocatorias</a>
+                    </div>
+                </div>
+
+                <!-- Noticias -->
+                <a href="#noticias" class="menu-item">
+                    <i class="fas fa-newspaper"></i> Noticias
+                </a>
+
+                <!-- Contacto -->
+                <a href="/contacto.html" class="menu-item">
+                    <i class="fas fa-envelope"></i> Contacto
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="main-wrapper">
+
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <img src="/images/logo.png" alt="Logo DRSU">
+                    <p>DRSU</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="hero" id="inicio">
+            <div class="hero-content">
+                <div class="breadcrumb">
+                    <span>Noticias</span>
+                    <span>›</span>
+                    <span>Contacto</span>
+                    <span>›</span>
+                    <span class="breadcrumb-active">Responsabilidad social</span>
+                </div>
+                <div class="hero-center-content">
+                    <h1 class="hero-title animate-fade-in">Responsabilidad social</h1>
+                    <p class="hero-subtitle animate-fade-in-delay">Compromiso con el desarrollo sostenible y el
+                        bienestar de la sociedad</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="que-hacemos" class="section-wrapper">
+            <div class="section-header text-center">
+                <h2 class="section-main-title">¿Qué hacemos?</h2>
+                <p class="section-subtitle">DIRECCIÓN DE RESPONSABILIDAD SOCIAL UNIVERSITARIA DE LA UNIVERSIDAD NACIONAL
+                    DE PIURA</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="card-title">Formación Profesional</h3>
+                    <ul class="card-list">
+                        <li>Presencia de temáticas ciudadanas y de responsabilidad social en el currículo</li>
+                        <li>Desarrollo sostenible, ética profesional y cívica</li>
+                        <li>Articulación entre profesorado y voluntariado solidario</li>
+                        <li>Aprendizaje profesional basado en proyectos sociales</li>
+                        <li>Integración de actores sociales externos en el diseño de las mallas curriculares</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="card-title">Investigación</h3>
+                    <ul class="card-list">
+                        <li>Promoción de la inter y transdisciplinariedad</li>
+                        <li>Integración de actores sociales externos en las investigaciones</li>
+                        <li>Diseño de líneas de investigación</li>
+                        <li>Difusión y transferencia de conocimientos socialmente útiles</li>
+                        <li>Promoción de investigaciones aplicadas a temas de desarrollo</li>
+                        <li>Objetivos del Milenio, Pacto Global, etc.</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="card-title">Vínculo con el entorno</h3>
+                    <ul class="card-list">
+                        <li>Integración de la formación académica con la proyección social</li>
+                        <li>Comunidades de aprendizaje mutuo para el desarrollo</li>
+                        <li>Lucha contra el asistencialismo y paternalismo</li>
+                        <li>Servicio universitario a la comunidad</li>
+                        <li>Promoción de redes sociales para el desarrollo</li>
+                        <li>Participación activa en la agenda local y nacional</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="card-title">Gestión Institucional</h3>
+                    <ul class="card-list">
+                        <li>Derechos humanos, equidad de género y no discriminación</li>
+                        <li>Desarrollo personal y profesional</li>
+                        <li>Buen clima de trabajo y aplicación de los derechos laborales</li>
+                        <li>Medio ambiente (campus sostenible)</li>
+                        <li>Transparencia y democracia (buen gobierno)</li>
+                        <li>Comunicación y marketing responsables</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="voluntariado" class="section-wrapper bg-light">
+            <div class="section-header text-center">
+                <h2 class="section-main-title">Sistema de Voluntariado</h2>
+                <p class="section-subtitle">Acciones libres, voluntarias y solidarias para el desarrollo social</p>
+            </div>
+
+            <div class="volunteer-cards-grid">
+                <div class="volunteer-card" data-aos="zoom-in">
+                    <div class="volunteer-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Voluntariado de Gestión de Proyectos</h3>
+                    <p>Planificación y ejecución de proyectos sociales de impacto comunitario</p>
+                </div>
+
+                <div class="volunteer-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="volunteer-icon green">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Voluntariado Ambiental</h3>
+                    <p>Protección del medio ambiente y promoción de prácticas sostenibles</p>
+                </div>
+
+                <div class="volunteer-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="volunteer-icon orange">
+                        <i class="fas fa-dove"></i>
+                    </div>
+                    <h3>Voluntariado de Educación para la Paz</h3>
+                    <p>Promoción de la cultura de paz y resolución de conflictos</p>
+                </div>
+
+                <div class="volunteer-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="volunteer-icon purple">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Voluntariado de Salud Mental</h3>
+                    <p>Apoyo psicológico y promoción del bienestar emocional</p>
+                </div>
+
+                <div class="volunteer-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="volunteer-icon red">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Brigadas Voluntarias para Emergencias</h3>
+                    <p>Respuesta rápida y eficaz ante situaciones de emergencia</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="section-wrapper">
+            <div class="section-header text-center">
+                <h2 class="section-main-title">Proyectos de Responsabilidad Social</h2>
+                <p class="section-subtitle">Iniciativas que transforman vidas y comunidades</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-right">
+                    <div class="project-number">01</div>
+                    <div class="project-content">
+                        <h3>Consultorio Jurídico Gratuito</h3>
+                        <p>Diseñar, fundamentar la viabilidad y la relevancia, y ejecutar un programa de responsabilidad
+                            social universitaria liderado por el equipo DRSU de la UNP, en beneficio de poblaciones de
+                            bajos recursos que requieren asesoría legal, en colaboración con la Facultad de Derecho y
+                            Ciencias Políticas de la UNP.</p>
+                        <div class="project-tags">
+                            <span class="tag">Inclusión social</span>
+                            <span class="tag">Acceso a la justicia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-left">
+                    <div class="project-number">02</div>
+                    <div class="project-content">
+                        <h3>Programa de Recuperación Pedagógical</h3>
+                        <p>Diseñar, fundamentar la viabilidad y la relevancia, y ejecutar un programa de responsabilidad
+                            social universitaria liderado por el equipo DRSU de la UNP, en beneficio de estudiantes de
+                            instituciones educativas locales que necesitan refuerzo en su aprendizaje, en colaboración
+                            con la Facultad de Ciencias Sociales y Educación de la UNP y las escuelas participantes.</p>
+                        <div class="project-tags">
+                            <span class="tag">Educación inclusiva</span>
+                            <span class="tag">Voluntariado universitario</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-right">
+                    <div class="project-number">03</div>
+                    <div class="project-content">
+                        <h3>Proyecto de Potabilización de Agua en Comunidades Rurales</h3>
+                        <p>Diseñar, fundamentar la viabilidad y la relevancia, y ejecutar un programa de responsabilidad
+                            social universitaria liderado por el equipo DRSU de la UNP, en beneficio de comunidades
+                            rurales sin acceso a agua potable segura, en colaboración con la Facultad de Ingeniería de
+                            Minas de la UNP y la comunidad local de
+                            Negritos (Talara).</p>
+                        <div class="project-tags">
+                            <span class="tag">Salud comunitaria</span>
+                            <span class="tag">Medio ambiente</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-left">
+                    <div class="project-number">04</div>
+                    <div class="project-content">
+                        <h3>Programa de Capacitación en Pesca Sostenible Artesanal</h3>
+                        <p>Diseñar, fundamentar la viabilidad y la relevancia, y ejecutar un programa de responsabilidad
+                            social universitaria liderado por el equipo DRSU de la UNP, en beneficio de pescadores
+                            artesanales de comunidades costeras, en colaboración con la Facultad de Ingeniería Pesquera
+                            de la UNP y la ONG Oceano Corp.</p>
+                        <div class="project-tags">
+                            <span class="tag">Medio ambiente</span>
+                            <span class="tag">Desarrollo sostenible</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="noticias" class="section-wrapper bg-light" style="padding-bottom: 2rem;">
+            <div class="section-header text-center">
+                <h2 class="section-main-title">Noticias y Eventos</h2>
+                <p class="section-subtitle">Mantente informado sobre nuestras actividades y logros</p>
+            </div>
+
+            <div class="news-grid">
+                <article class="news-card" data-aos="flip-left">
+                    <div class="news-image">
+                        <img src="/images/noticias1.jpg" alt="Seminario">
+                        <div class="news-date">
+                            <span class="day">04</span>
+                            <span class="month">OCT</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <h3>DRSU-UNP e INDECI organizan Seminario "Gestión reactiva del riesgo de desastres"</h3>
+                        <p>La titular de la Dirección de Responsabilidad Social Universitaria (DRSU) de la Universidad
+                            Nacional de Piura, Dra. Sara Chunga Palomino y Director Ejecutivo...</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="news-image">
+                        <img src="/images/noticias2.jpg" alt="Agua potable">
+                        <div class="news-date">
+                            <span class="day">04</span>
+                            <span class="month">OCT</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <h3>DRSU y Gore unirán esfuerzos por el agua potable en zonas rurales</h3>
+                        <p>La directora de la Dirección de Responsabilidad Social Universitaria de la Universidad
+                            Nacional de Piura, Dr. Sara Luz Chunga Palomino, sostuvo una reunión...</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="news-image">
+                        <img src="/images/noticias3.jpg" alt="Trata de personas">
+                        <div class="news-date">
+                            <span class="day">26</span>
+                            <span class="month">SEP</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <h3>DRSU UNP camina contra la Trata de Personas</h3>
+                        <p>La Dirección de Responsabilidad Social Universitaria de la Universidad Nacional de Piura,
+                            participó en la Caminata por el Día Nacional de la Trata de Personas...</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-wrapper universidad-saludable" style="padding-bottom: 2rem; padding-top: 2rem;">
+            <div class="container-wide">
+                <div class="healthy-uni-content" data-aos="fade-up">
+                    <div class="healthy-uni-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h2>Universidad Saludable</h2>
+                    <p>
+                        Una Universidad Saludable UNP es aquella que incorpora la promoción integral de la salud como
+                        eje transversal de su proyecto educativo, laboral y comunitario.
+                        La Dirección de Responsabilidad Social Universitaria (DRSU) impulsa este modelo para fortalecer
+                        el bienestar físico, mental y nutricional de toda la comunidad universitaria —estudiantes,
+                        docentes y personal administrativo— promoviendo estilos de vida saludables, entornos laborales
+                        seguros y hábitos sostenibles que se reflejen en los hogares y en la sociedad piurana.
+                    </p>
+                    <div class="health-pillars">
+                        <div class="pillar">
+                            <i class="fas fa-apple-alt"></i>
+                            <span>Salud Nutricional</span>
+                        </div>
+                        <div class="pillar">
+                            <i class="fas fa-brain"></i>
+                            <span>Salud Mental</span>
+                        </div>
+                        <div class="pillar">
+                            <i class="fas fa-running"></i>
+                            <span>Salud Física</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3><i class="fas fa-map-marker-alt"></i> Contacto</h3>
+                    <p><i class="fas fa-building"></i> Dirección: Jr.Callao Nº247.Piura</p>
+                    <p><i class="fas fa-phone"></i> Teléfono: (073) 300357 - 323455</p>
+                    <p><i class="fas fa-envelope"></i> Correo: drsu2023unp@gmail.com</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3><i class="fas fa-link"></i> Enlaces Rápidos</h3>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Admisión</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Carreras pregrado</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Estudios de posgrado</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Investigación</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Cultura</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3><i class="fas fa-star"></i> Interés</h3>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Vicerrectorado de investigación</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Vicerrectorado Académico</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Oficina de Educación Virtual</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Calidad Académica</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3><i class="fas fa-shield-alt"></i> Transparencia</h3>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Libro de reclamaciones</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Atención de Denuncias</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Portal de transparencia</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Mapa de sitio</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universidad Nacional De Piura - DRSU. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
