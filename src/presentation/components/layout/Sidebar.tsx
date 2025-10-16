@@ -1,27 +1,42 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { 
-  Home, 
-  Users, 
-  FolderOpen, 
+import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import {
+  Home,
+  Users,
+  FolderOpen,
   Newspaper,
   Wrench,
   Mail,
-  Heart
-} from 'lucide-react';
-import { cn } from '../../lib/utils';
-import { useSidebar } from '../../hooks/useSidebar';
-import { useNavigation } from '../../hooks/useNavigation';
+  Heart,
+} from "lucide-react";
+import { cn } from "../../lib/utils";
+import { useSidebar } from "../../hooks/useSidebar";
+import { useNavigation } from "../../hooks/useNavigation";
 
 const SIDEBAR_ICONS = [
-  { id: 'home', icon: Home, href: '/', tooltip: 'Inicio' },
-  { id: 'users', icon: Users, href: '/what-is-rsu', tooltip: 'Nosotros' },
-  { id: 'folder', icon: FolderOpen, href: '/reconocimiento', tooltip: 'Documentos' },
-  { id: 'herramientas', icon: Wrench, href: '/cursos', tooltip: 'Herramientas' },
-  { id: 'voluntariado', icon: Heart, href: '/voluntariado', tooltip: 'Voluntariado' },
-  { id: 'newspaper', icon: Newspaper, href: '/noticias', tooltip: 'Noticias' },
-  { id: 'contacto', icon: Mail, href: '/contacto', tooltip: 'Contacto' }
+  { id: "home", icon: Home, href: "/", tooltip: "Inicio" },
+  { id: "users", icon: Users, href: "/what-is-rsu", tooltip: "Nosotros" },
+  {
+    id: "folder",
+    icon: FolderOpen,
+    href: "/reconocimiento",
+    tooltip: "Documentos",
+  },
+  {
+    id: "herramientas",
+    icon: Wrench,
+    href: "/cursos",
+    tooltip: "Herramientas",
+  },
+  {
+    id: "voluntariado",
+    icon: Heart,
+    href: "/voluntariado",
+    tooltip: "Voluntariado",
+  },
+  { id: "newspaper", icon: Newspaper, href: "/noticias", tooltip: "Noticias" },
+  { id: "contacto", icon: Mail, href: "/contacto", tooltip: "Contacto" },
 ];
 
 export const Sidebar: React.FC = () => {
@@ -40,9 +55,9 @@ export const Sidebar: React.FC = () => {
       <div className="flex h-full flex-col items-center py-4">
         {/* Logo */}
         <div className="mb-8 flex h-12 w-12 items-center justify-center">
-          <img 
-            src="/images/logo.png" 
-            alt="DRSU Logo" 
+          <img
+            src="/images/logo.png"
+            alt="DRSU Logo"
             className="h-10 w-10 object-contain"
           />
         </div>
@@ -52,7 +67,7 @@ export const Sidebar: React.FC = () => {
           {SIDEBAR_ICONS.map((item) => {
             const Icon = item.icon;
             const isActive = isActiveRoute(item.href);
-            
+
             return (
               <div key={item.id} className="relative group">
                 <Link
@@ -60,32 +75,26 @@ export const Sidebar: React.FC = () => {
                   className={cn(
                     "flex h-12 w-12 items-center justify-center rounded-lg transition-all duration-200",
                     "hover:bg-white/10 hover:scale-110",
-                    isActive 
-                      ? "bg-white/20 text-white shadow-md" 
+                    isActive
+                      ? "bg-white/20 text-white shadow-md"
                       : "text-white/70 hover:text-white"
                   )}
                 >
                   <Icon className="h-6 w-6" />
                 </Link>
-                
+
                 {/* Tooltip */}
-                <motion.div
+                <div
                   className={cn(
                     "absolute left-16 top-1/2 -translate-y-1/2 z-50",
                     "bg-gray-900 text-white text-sm px-2 py-1 rounded",
                     "whitespace-nowrap pointer-events-none",
                     "opacity-0 group-hover:opacity-100 transition-opacity duration-200"
                   )}
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={{ 
-                    opacity: isHovered ? 1 : 0,
-                    x: isHovered ? 0 : -10
-                  }}
-                  transition={{ duration: 0.2 }}
                 >
                   {item.tooltip}
                   <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1 w-2 h-2 bg-gray-900 rotate-45" />
-                </motion.div>
+                </div>
               </div>
             );
           })}
