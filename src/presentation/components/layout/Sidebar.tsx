@@ -40,7 +40,7 @@ const SIDEBAR_ICONS = [
 ];
 
 export const Sidebar: React.FC = () => {
-  const { isHovered, handleMouseEnter, handleMouseLeave } = useSidebar();
+  const { handleMouseEnter, handleMouseLeave } = useSidebar();
   const { isActiveRoute } = useNavigation();
 
   return (
