@@ -39,28 +39,15 @@ const heroImages = [
 
 export const HeroSection: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true);
 
   // Auto-rotación del carrusel cada 6 segundos
   useEffect(() => {
-    if (!isPlaying) return;
-
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
     }, 6000);
 
     return () => clearInterval(interval);
-  }, [isPlaying]);
-
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? heroImages.length - 1 : prevIndex - 1
-    );
-  };
+  }, []);
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
