@@ -1,10 +1,10 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
-import { Sidebar } from './Sidebar';
-import { Header } from './Header';
-import { MenuOverlay } from './MenuOverlay';
-import { useNavigation } from '../../hooks/useNavigation';
-import { cn } from '../../lib/utils';
+import React from "react";
+import { Outlet } from "react-router-dom";
+import { Sidebar } from "./Sidebar";
+import { Header } from "./Header";
+import { MenuOverlay } from "./MenuOverlay";
+import { useNavigation } from "../../hooks/useNavigation";
+import { cn } from "../../lib/utils";
 
 export const Layout: React.FC = () => {
   const { isMenuOpen, toggleMenu, closeMenu } = useNavigation();
@@ -17,10 +17,12 @@ export const Layout: React.FC = () => {
       </div>
 
       {/* Main content */}
-      <div className={cn(
-        "min-h-screen transition-all duration-300",
-        "lg:ml-[70px]" // Margen izquierdo para el sidebar en desktop
-      )}>
+      <div
+        className={cn(
+          "min-h-screen transition-all duration-300",
+          "lg:ml-[70px]" // Margen izquierdo para el sidebar en desktop
+        )}
+      >
         {/* Header */}
         <Header onMenuToggle={toggleMenu} />
 
@@ -30,8 +32,10 @@ export const Layout: React.FC = () => {
         </main>
       </div>
 
-      {/* Menu Overlay */}
-      <MenuOverlay isOpen={isMenuOpen} onClose={closeMenu} />
+      {/* Menu Overlay - solo en mobile/tablet */}
+      <div className="lg:hidden">
+        <MenuOverlay isOpen={isMenuOpen} onClose={closeMenu} />
+      </div>
     </div>
   );
 };

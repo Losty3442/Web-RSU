@@ -1,8 +1,8 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Menu, Facebook, Twitter, Instagram } from 'lucide-react';
-import { Button } from '../ui/button';
-import { cn } from '../../lib/utils';
+import React from "react";
+import { motion } from "framer-motion";
+import { Menu, Facebook, Twitter, Instagram } from "lucide-react";
+import { Button } from "../ui/button";
+import { cn } from "../../lib/utils";
 
 interface HeaderProps {
   onMenuToggle: () => void;
@@ -24,9 +24,9 @@ export const Header: React.FC<HeaderProps> = ({ onMenuToggle, className }) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo y título */}
           <div className="flex items-center space-x-4">
-            <img 
-              src="/images/unplogo.png" 
-              alt="UNP Logo" 
+            <img
+              src="/images/unplogo.png"
+              alt="UNP Logo"
               className="h-10 w-auto object-contain"
             />
             <div className="hidden md:block">
@@ -69,12 +69,12 @@ export const Header: React.FC<HeaderProps> = ({ onMenuToggle, className }) => {
               </a>
             </div>
 
-            {/* Botón de menú */}
+            {/* Botón de menú - solo visible en mobile/tablet */}
             <Button
               variant="ghost"
               size="icon"
               onClick={onMenuToggle}
-              className="text-primary hover:bg-primary/10"
+              className="text-primary hover:bg-primary/10 lg:hidden"
             >
               <Menu className="h-6 w-6" />
             </Button>

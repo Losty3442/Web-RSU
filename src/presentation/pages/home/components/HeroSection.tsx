@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
+import { ChevronDown } from "lucide-react";
+import { AuroraText } from "@/presentation/components/ui/aurora-text";
 
 // Array de imágenes para el carrusel
 const heroImages = [
@@ -65,14 +66,17 @@ export const HeroSection: React.FC = () => {
     <section className="relative h-screen w-full overflow-hidden">
       {/* Background Images Carousel */}
       <div className="absolute inset-0">
-        <AnimatePresence mode="wait">
+        {/* Consistent blue background to prevent white flash */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-blue-800/60 to-blue-900/90" />
+
+        <AnimatePresence mode="popLayout">
           <motion.div
             key={currentImageIndex}
             className="absolute inset-0"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
+            transition={{ duration: 1.2, ease: "easeInOut" }}
           >
             <img
               src={heroImages[currentImageIndex].src}
@@ -82,12 +86,12 @@ export const HeroSection: React.FC = () => {
           </motion.div>
         </AnimatePresence>
 
-        {/* Dark background to prevent white flash during transitions */}
-        <div className="absolute inset-0 bg-slate-800" />
-
-        {/* Balanced overlay - visible images with good text contrast */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/60 via-slate-800/40 to-slate-900/70" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30" />
+        {/* Vignette effect - matches exact primary color (#071A40) */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#071A40]/80 via-transparent to-[#071A40]/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#071A40]/80 via-transparent to-[#071A40]/80" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#071A40]/60 via-transparent to-[#071A40]/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#071A40]/70 via-transparent to-[#071A40]/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#071A40]/50 via-transparent to-[#071A40]/60" />
       </div>
 
       {/* Fixed Top Navigation */}
@@ -100,15 +104,6 @@ export const HeroSection: React.FC = () => {
         <div className="text-white/80 text-sm font-medium">
           Universidad Nacional de Piura
         </div>
-        <div className="flex items-center space-x-2">
-          <button
-            onClick={() => setIsPlaying(!isPlaying)}
-            className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200"
-            aria-label={isPlaying ? "Pausar carrusel" : "Reproducir carrusel"}
-          >
-            {isPlaying ? <Pause size={16} /> : <Play size={16} />}
-          </button>
-        </div>
       </motion.div>
 
       {/* Content Container */}
@@ -119,87 +114,128 @@ export const HeroSection: React.FC = () => {
             <div className="text-center">
               {/* Image Info */}
               <motion.div
-                className="mb-6"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
+                className="mb-8"
+                initial={{ opacity: 0, y: 30, scale: 0.9 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
               >
-                <h2 className="text-white/90 text-lg font-medium mb-2">
+                <motion.h2
+                  className="text-white text-xl font-semibold mb-3 drop-shadow-lg"
+                  style={{ fontFamily: "Alan Sans, sans-serif" }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.5 }}
+                >
                   {heroImages[currentImageIndex].title}
-                </h2>
-                <p className="text-white/70 text-sm max-w-md mx-auto">
+                </motion.h2>
+                <motion.p
+                  className="text-white/90 text-base max-w-lg mx-auto leading-relaxed drop-shadow-md"
+                  style={{ fontFamily: "Open Sans, sans-serif" }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.7 }}
+                >
                   {heroImages[currentImageIndex].description}
-                </p>
+                </motion.p>
               </motion.div>
 
               {/* Main Title */}
               <motion.h1
-                className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
+                className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 leading-tight"
+                style={{ fontFamily: "Alan Sans, sans-serif" }}
+                initial={{ opacity: 0, y: 40, scale: 0.8 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 1.2, delay: 0.9, ease: "easeOut" }}
               >
-                Dirección de
-                <br />
-                <span className="text-accent">Responsabilidad Social</span>
-                <br />
-                Universitaria
+                <motion.span
+                  className="text-white drop-shadow-2xl block"
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 1.1 }}
+                >
+                  Dirección de
+                </motion.span>
+                <motion.div
+                  className="my-2"
+                  initial={{ opacity: 0, y: 30, scale: 0.9 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{ duration: 1, delay: 1.3, ease: "easeOut" }}
+                >
+                  <AuroraText
+                    className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold"
+                    colors={["#FFFFFF", "#FFD700", "#FF6B35", "#FF4500"]}
+                    speed={1}
+                  >
+                    Responsabilidad Social
+                  </AuroraText>
+                </motion.div>
+                <motion.span
+                  className="text-white drop-shadow-2xl block"
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 1.5 }}
+                >
+                  Universitaria
+                </motion.span>
               </motion.h1>
 
               {/* Subtitle */}
               <motion.p
-                className="text-lg md:text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed mb-8"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
+                className="text-lg md:text-xl lg:text-2xl max-w-4xl mx-auto leading-relaxed mb-10"
+                style={{ fontFamily: "Open Sans, sans-serif" }}
+                initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 1, delay: 1.7, ease: "easeOut" }}
               >
-                Comprometidos con el desarrollo sostenible y la transformación
-                social de nuestra comunidad universitaria y la sociedad piurana.
+                <span className="text-white drop-shadow-lg font-medium">
+                  Comprometidos con el desarrollo sostenible y la transformación
+                  <br />
+                  social de nuestra comunidad universitaria y la sociedad
+                  piurana.
+                </span>
               </motion.p>
 
               {/* Call to Action */}
               <motion.div
-                className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
+                className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+                initial={{ opacity: 0, y: 40, scale: 0.9 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 1, delay: 1.9, ease: "easeOut" }}
               >
-                <button className="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105">
+                <motion.button
+                  className="bg-[#00BFFF] hover:bg-[#00BFFF]/90 text-white px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300 shadow-2xl hover:shadow-[#00BFFF]/25 hover:scale-105 border-2 border-[#00BFFF]"
+                  style={{ fontFamily: "Alan Sans, sans-serif" }}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 2.1 }}
+                >
                   Conoce más sobre nosotros
-                </button>
-                <button className="border-2 border-white/30 hover:border-white text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 hover:bg-white/10">
+                </motion.button>
+                <motion.button
+                  className="border-2 border-white/40 hover:border-white text-white px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300 hover:bg-white/10 backdrop-blur-sm shadow-xl"
+                  style={{ fontFamily: "Alan Sans, sans-serif" }}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  initial={{ opacity: 0, x: 30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 2.3 }}
+                >
                   Ver nuestras actividades
-                </button>
+                </motion.button>
               </motion.div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Controls */}
+        {/* Bottom Controls - Only Indicators */}
         <motion.div
-          className="flex justify-between items-center p-6 lg:p-8"
+          className="flex justify-center items-center p-6 lg:p-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
         >
-          {/* Navigation Arrows */}
-          <div className="flex items-center space-x-4">
-            <button
-              onClick={prevImage}
-              className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200"
-              aria-label="Imagen anterior"
-            >
-              <ChevronLeft size={20} />
-            </button>
-            <button
-              onClick={nextImage}
-              className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200"
-              aria-label="Siguiente imagen"
-            >
-              <ChevronRight size={20} />
-            </button>
-          </div>
-
           {/* Carousel Indicators */}
           <div className="flex space-x-2">
             {heroImages.map((_, index) => (
@@ -215,13 +251,40 @@ export const HeroSection: React.FC = () => {
               />
             ))}
           </div>
-
-          {/* Image Counter */}
-          <div className="text-white/70 text-sm font-medium">
-            {currentImageIndex + 1} / {heroImages.length}
-          </div>
         </motion.div>
       </div>
+
+      {/* Scroll Down Indicator */}
+      <motion.div
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 2.5 }}
+      >
+        <motion.div
+          className="flex flex-col items-center space-y-2 cursor-pointer group"
+          animate={{ y: [0, 8, 0] }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          whileHover={{ scale: 1.1 }}
+        >
+          <span className="text-white/60 text-xs font-medium tracking-wider uppercase">
+            Scroll
+          </span>
+          <motion.div
+            className="p-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 group-hover:bg-white/20 transition-colors duration-300"
+            whileHover={{ scale: 1.1 }}
+          >
+            <ChevronDown
+              size={20}
+              className="text-white/80 group-hover:text-white transition-colors duration-300"
+            />
+          </motion.div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
