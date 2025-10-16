@@ -184,51 +184,7 @@ const WhatIsRsuPage: React.FC = () => {
           </div>
         </div>
 
-        {/* News Section */}
-        <div className="mb-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Noticias y Eventos
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto mb-4"></div>
-            <p className="text-gray-600">
-              Mantente informado sobre nuestras actividades y logros
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {newsItems.map((news) => (
-              <Card key={news.id} className="group hover:shadow-lg transition-all duration-300 overflow-hidden">
-                <div className="relative">
-                  <div className="aspect-video overflow-hidden">
-                    <img
-                      src={news.image}
-                      alt={news.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.src = `https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=university%20social%20responsibility%20event%20students%20community%20engagement&image_size=landscape_16_9`;
-                      }}
-                    />
-                  </div>
-                  <div className="absolute top-4 right-4 bg-white rounded-lg shadow-lg p-2 text-center">
-                    <div className="text-lg font-bold text-blue-600">{news.date.day}</div>
-                    <div className="text-xs text-gray-600 uppercase">{news.date.month}</div>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4 line-clamp-3 group-hover:text-blue-600 transition-colors">
-                    {news.title}
-                  </h3>
-                  <Button variant="outline" className="w-full group-hover:bg-blue-50 group-hover:border-blue-300 transition-colors">
-                    Leer más
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+      
       </div>
     </div>
   );
