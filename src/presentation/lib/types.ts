@@ -94,3 +94,53 @@ export interface ContactInfo {
     linkedin?: string;
   };
 }
+
+// Tipos para Supabase
+export interface NewsDB {
+  id: string;
+  title: string;
+  content: string;
+  summary: string | null;
+  image_url: string | null;
+  author: string | null;
+  published_at: string;
+  created_at: string;
+  updated_at: string | null;
+  deleted_at: string | null;
+  user_id: string | null;
+}
+
+export interface DocumentDB {
+  id: string;
+  title: string;
+  description: string | null;
+  type: 'WEB' | 'DOCUMENT' | 'VIDEO' | 'IMAGE';
+  link: string | null;
+  section: 'DOCUMENTS' | 'TOOLS' | null;
+  created_at: string;
+  updated_at: string | null;
+  deleted_at: string | null;
+  user_id: string | null;
+}
+
+export interface User {
+  id: string;
+  email: string;
+}
+
+// Tipos para formularios
+export interface NewsFormData {
+  title: string;
+  content: string;
+  summary: string;
+  image_url: string;
+  author: string;
+}
+
+export interface DocumentFormData {
+  title: string;
+  description: string;
+  type: 'WEB' | 'DOCUMENT' | 'VIDEO' | 'IMAGE';
+  link: string;
+  section: 'DOCUMENTS' | 'TOOLS';
+}

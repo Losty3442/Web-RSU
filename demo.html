@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Demo</title>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <style>
+        .demo {
+            background-color: red;
+            color: white;
+        }
+    </style>
+    <body>
+        
+    </body>
+    <script type="text/babel">
+       
+        /*
+        // JavaScript VANILLA js
+        const div = document.createElement('div');
+        div.textContent = 'Demo';
+        div.classList.add('demo');
+        document.body.appendChild(div);
+      
+        // React JS
+        const div2 = React.createElement('div', { className: 'demo' }, 
+        React.createElement('h1', { className: 'title' }, 
+          React.createElement('span', { className: 'subtitle' }, 
+            React.createElement('span', { className: 'subtitle-2' }, 'Subtitle 2'))));
+        const root2 = ReactDOM.createRoot(document.body);
+        root2.render(div2);
+        */
+
+        function Div() {
+            return (
+                <div className="demo"><div><div>Demo</div></div></div>
+            );
+        }
+
+        const MyApp = () => {
+            return (
+                <div>
+                    <Div />
+                    <Div />
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.body);
+        root.render(<MyApp />);
+    </script>
+</html>
