@@ -180,7 +180,7 @@ const VisionPage: React.FC = () => {
               </Button>
             </Link>
             <Link to="/contacto">
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-purple-600">
+              <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-white hover:text-purple-600">
                 Contáctanos
               </Button>
             </Link>

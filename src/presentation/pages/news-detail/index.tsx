@@ -171,7 +171,7 @@ const NewsDetailPage: React.FC = () => {
             <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="text-center space-y-4">
                 <Avatar size="lg" className="mx-auto">
-                  <AvatarImage src="/images/DRSU-logo.png" alt="DRSU" />
+                  <AvatarImage src="/images/logo.png" alt="DRSU" />
                   <AvatarFallback className="bg-blue-100 text-blue-800 font-bold">DR</AvatarFallback>
                 </Avatar>
                 <div>

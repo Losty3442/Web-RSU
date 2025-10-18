@@ -127,7 +127,7 @@ export const NewsGrid: React.FC<NewsGridProps> = ({
               {/* Autor */}
               <div className="flex items-center gap-2 pt-2 border-t border-gray-100">
                 <Avatar size="sm">
-                  <AvatarImage src="/images/DRSU-logo.png" alt="DRSU" />
+                  <AvatarImage src="/images/logo.png" alt="DRSU" />
                   <AvatarFallback>DR</AvatarFallback>
                 </Avatar>
                 <div className="flex-1 min-w-0">

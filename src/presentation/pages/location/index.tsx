@@ -35,7 +35,7 @@ const LocationPage: React.FC = () => {
             <div className="flex justify-center mb-8">
               <div className="w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center border-4 border-blue-200">
                 <img 
-                  src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=University%20logo%20UNP%20Peru%20shield%20academic%20emblem&image_size=square" 
+                  src="/images/unplogo.png" 
                   alt="Logo UNP" 
                   className="w-16 h-16 rounded-full object-cover"
                 />
@@ -110,7 +110,7 @@ const LocationPage: React.FC = () => {
                   </div>
                   <div className="absolute -right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center border-2 border-blue-200">
                     <img 
-                      src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=DRSU%20logo%20social%20responsibility%20university%20emblem%20circular&image_size=square" 
+                      src="/images/logo.png" 
                       alt="Logo DRSU" 
                       className="w-8 h-8 rounded-full object-cover"
                     />
