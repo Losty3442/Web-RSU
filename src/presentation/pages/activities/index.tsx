@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/card';
 import { Badge } from '../../components/ui/badge';
 import { Calendar, Users, Target, Lightbulb } from 'lucide-react';
@@ -46,6 +47,7 @@ const ACTIVITIES = [
 
 export default function ActivitiesPage() {
   const { isVisible, ref } = useScrollAnimation();
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -123,7 +125,10 @@ export default function ActivitiesPage() {
                       <p className="text-gray-600 leading-relaxed mb-4">
                         {activity.description}
                       </p>
-                      <button className="text-primary hover:text-primary/80 font-semibold transition-colors duration-200">
+                      <button 
+                        onClick={() => navigate(activity.href)}
+                        className="text-primary hover:text-primary/80 font-semibold transition-colors duration-200"
+                      >
                         Ver más detalles →
                       </button>
                     </CardContent>
@@ -151,7 +156,10 @@ export default function ActivitiesPage() {
               Únete a nuestros programas y contribuye al desarrollo sostenible 
               de nuestra región mientras enriqueces tu formación profesional.
             </p>
-            <button className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl">
+            <button 
+              onClick={() => navigate('/contacto')}
+              className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl"
+            >
               Contactar para participar
             </button>
           </motion.div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import { Card, CardContent } from '../../components/ui/card';
 import { Badge } from '../../components/ui/badge';
 import { Target, Users, MapPin, Award } from 'lucide-react';
@@ -42,6 +43,7 @@ const PROJECTS = [
 
 export default function ProyectosDrsuPage() {
   const { isVisible, ref } = useScrollAnimation();
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -129,7 +131,10 @@ export default function ProyectosDrsuPage() {
                         </div>
                       </div>
                       
-                      <button className="text-primary hover:text-primary/80 font-semibold transition-colors duration-200">
+                      <button 
+                        onClick={() => navigate('/contacto')}
+                        className="text-primary hover:text-primary/80 font-semibold transition-colors duration-200"
+                      >
                         Ver más detalles →
                       </button>
                     </CardContent>
@@ -196,10 +201,16 @@ export default function ProyectosDrsuPage() {
               Hay muchas formas de participar y hacer la diferencia.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl">
+              <button 
+                onClick={() => navigate('/voluntariado')}
+                className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl"
+              >
                 Ser Voluntario
               </button>
-              <button className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200">
+              <button 
+                onClick={() => navigate('/contacto')}
+                className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
+              >
                 Proponer Proyecto
               </button>
             </div>

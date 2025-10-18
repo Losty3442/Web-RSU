@@ -1,5 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import { Card, CardContent } from '../../components/ui/card';
 import { Badge } from '../../components/ui/badge';
 import { Calendar, MapPin, Users, Clock } from 'lucide-react';
@@ -7,6 +7,7 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
 export default function VIIIEnarsuPage() {
   const { isVisible, ref } = useScrollAnimation();
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -124,7 +125,10 @@ export default function VIIIEnarsuPage() {
                     </div>
 
                     <div className="mt-6 pt-6 border-t border-gray-200">
-                      <button className="w-full bg-primary hover:bg-primary/90 text-white py-3 rounded-lg font-semibold transition-colors duration-200">
+                      <button 
+                        onClick={() => navigate('/contacto')}
+                        className="w-full bg-primary hover:bg-primary/90 text-white py-3 rounded-lg font-semibold transition-colors duration-200"
+                      >
                         Registrarse
                       </button>
                       <p className="text-xs text-gray-500 text-center mt-2">

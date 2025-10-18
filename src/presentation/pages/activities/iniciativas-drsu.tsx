@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import { Card, CardContent } from '../../components/ui/card';
 import { Badge } from '../../components/ui/badge';
 import { Lightbulb, Target, Users, TrendingUp } from 'lucide-react';
@@ -38,6 +39,7 @@ const INITIATIVES = [
 
 export default function IniciativasDrsuPage() {
   const { isVisible, ref } = useScrollAnimation();
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -127,7 +129,10 @@ export default function IniciativasDrsuPage() {
                         </div>
                       </div>
                       
-                      <button className="text-primary hover:text-primary/80 font-semibold transition-colors duration-200">
+                      <button 
+                        onClick={() => navigate('/contacto')}
+                        className="text-primary hover:text-primary/80 font-semibold transition-colors duration-200"
+                      >
                         Ver más detalles →
                       </button>
                     </CardContent>
