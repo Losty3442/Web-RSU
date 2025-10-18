@@ -1109,15 +1109,23 @@ export const newsData: NewsItem[] = [
   {
     id: 1944,
     title: "Triptico Voluntariado UNP",
-    excerpt: "Talleres preservan expresiones artísticas tradicionales de la región.",
+    excerpt: "Material informativo sobre el programa de voluntariado universitario y cómo participar.",
     date: "12 Ene 2025",
     day: "12",
     month: "ENE",
     views: "1,543",
     image: "https://rsu.webunp.online/wp-content/uploads/2024/07/Triptico_lado_11-986x764.jpg",
-    category: "cultura",
+    category: "voluntariado",
     author: "DRSU",
-    content: `<p>El programa de música y danza tradicional trabaja con maestros artesanos para transmitir a jóvenes las expresiones culturales ancestrales de la región.</p>`,
+    content: `
+      <p>La DRSU presentó el tríptico informativo del Programa de Voluntariado UNP, que detalla las áreas de trabajo, requisitos y beneficios de participar en actividades de responsabilidad social universitaria.</p>
+      
+      <p>Este material educativo facilita la comprensión del programa y motiva a los estudiantes a involucrarse en proyectos de impacto social.</p>
+      
+      <h2>Áreas de Voluntariado</h2>
+      
+      <p>El tríptico describe las diferentes áreas donde los voluntarios pueden participar: educación, salud, medio ambiente, apoyo comunitario y desarrollo social.</p>
+    `,
     gallery: [
       "https://rsu.webunp.online/wp-content/uploads/2024/07/Triptico_lado_11-986x764.jpg",
       "https://rsu.webunp.online/wp-content/uploads/2024/07/Triptico_lado_22-984x753.jpg"
@@ -1126,15 +1134,23 @@ export const newsData: NewsItem[] = [
   {
     id: 1941,
     title: "Inscribete en el Voluntariado UNP",
-    excerpt: "Encuentro facilita financiamiento para iniciativas de impacto social.",
+    excerpt: "Convocatoria abierta para estudiantes interesados en participar en el programa de voluntariado universitario.",
     date: "08 Ene 2025",
     day: "08",
     month: "ENE",
     views: "2,234",
     image: "https://rsu.webunp.online/wp-content/uploads/2024/07/02_Flyer-02-2024.jpeg",
-    category: "emprendimiento",
+    category: "voluntariado",
     author: "DRSU",
-    content: `<p>La feria de emprendimiento social reunió a emprendedores con inversionistas de impacto, facilitando el financiamiento de proyectos que generan valor social y ambiental.</p>`,
+    content: `
+      <p>La DRSU abrió la convocatoria para que estudiantes de todas las facultades se inscriban en el Programa de Voluntariado UNP y participen en proyectos de responsabilidad social universitaria.</p>
+      
+      <p>Esta iniciativa busca formar estudiantes comprometidos con el desarrollo social y fortalecer el vínculo entre la universidad y la comunidad.</p>
+      
+      <h2>Beneficios del Voluntariado</h2>
+      
+      <p>Los voluntarios desarrollan habilidades blandas, adquieren experiencia en trabajo comunitario y contribuyen al bienestar de la sociedad, además de obtener certificación de sus horas de servicio.</p>
+    `,
     gallery: [
       "https://rsu.webunp.online/wp-content/uploads/2024/07/02_Flyer-02-2024.jpeg"
     ]
@@ -1142,15 +1158,23 @@ export const newsData: NewsItem[] = [
   {
     id: 1933,
     title: "Reunión con Directores URSU",
-    excerpt: "Tecnología apropiada mejora la salud de familias rurales.",
+    excerpt: "Encuentro de coordinación para alinear estrategias de responsabilidad social en las facultades.",
     date: "03 Ene 2025",
     day: "03",
     month: "ENE",
     views: "1,654",
     image: "https://rsu.webunp.online/wp-content/uploads/2024/07/Foto_ViceAcad.jpg",
-    category: "salud",
+    category: "eventos",
     author: "DRSU",
-    content: `<p>Cocinas mejoradas construidas en talleres comunitarios reducen dramáticamente la contaminación intradomiciliaria, mejorando la salud respiratoria de las familias.</p>`,
+    content: `
+      <p>La DRSU realizó una reunión de coordinación con los directores de las Unidades de Responsabilidad Social Universitaria (URSU) de las diferentes facultades de la UNP.</p>
+      
+      <p>Este encuentro permitió alinear estrategias, compartir experiencias y coordinar acciones conjuntas para fortalecer la responsabilidad social universitaria en toda la institución.</p>
+      
+      <h2>Objetivos de la Reunión</h2>
+      
+      <p>Se establecieron lineamientos comunes, se revisaron los avances de cada facultad y se planificaron actividades integradas para maximizar el impacto social de los programas de RSU.</p>
+    `,
     gallery: [
       "https://rsu.webunp.online/wp-content/uploads/2024/07/Foto_ViceAcad.jpg"
     ]
@@ -1158,15 +1182,23 @@ export const newsData: NewsItem[] = [
   {
     id: 1930,
     title: "Reunión Vicerrector Académico y la DRSU",
-    excerpt: "Profesionales exitosos inspiran y orientan a jóvenes universitarios.",
+    excerpt: "Encuentro estratégico para fortalecer la responsabilidad social en el ámbito académico.",
     date: "28 Dic 2024",
     day: "28",
     month: "DIC",
     views: "1,765",
     image: "https://rsu.webunp.online/wp-content/uploads/2024/07/Foto_ViceAcad.jpg",
-    category: "mentoria",
+    category: "eventos",
     author: "DRSU",
-    content: `<p>La red de mentores conecta a profesionales exitosos con estudiantes de primera generación universitaria, brindándoles orientación para su desarrollo académico y profesional.</p>`,
+    content: `
+      <p>El Vicerrector Académico y la Dirección de Responsabilidad Social Universitaria sostuvieron una reunión de coordinación para fortalecer la integración de la RSU en el ámbito académico.</p>
+      
+      <p>Este encuentro permitió establecer lineamientos para incorporar la responsabilidad social en los currículos y actividades académicas de la universidad.</p>
+      
+      <h2>Acuerdos Establecidos</h2>
+      
+      <p>Se acordaron estrategias para integrar proyectos de RSU en los programas de estudio y promover la participación estudiantil en actividades de impacto social.</p>
+    `,
     gallery: [
       "https://rsu.webunp.online/wp-content/uploads/2024/07/Foto_ViceAcad.jpg"
     ]
@@ -1174,15 +1206,23 @@ export const newsData: NewsItem[] = [
   {
     id: 1908,
     title: "Reunión Vicerrector de Investigación y DRSU",
-    excerpt: "Voluntarios comparten la magia de la navidad con niños en tratamiento médico.",
+    excerpt: "Coordinación para integrar la responsabilidad social en proyectos de investigación universitaria.",
     date: "22 Dic 2024",
     day: "22",
     month: "DIC",
     views: "2,456",
     image: "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_1-edited.jpeg",
-    category: "voluntariado",
+    category: "investigacion",
     author: "DRSU",
-    content: `<p>Voluntarios de la DRSU visitaron hospitales llevando regalos, actividades recreativas y alegría a niños que pasan la navidad en tratamiento médico.</p>`,
+    content: `
+      <p>El Vicerrector de Investigación y la DRSU sostuvieron una reunión de trabajo para coordinar la integración de la responsabilidad social en los proyectos de investigación universitaria.</p>
+      
+      <p>Este encuentro busca promover investigaciones que generen impacto social y contribuyan al desarrollo sostenible de la región.</p>
+      
+      <h2>Líneas de Acción</h2>
+      
+      <p>Se establecieron lineamientos para que las investigaciones aborden problemáticas sociales relevantes y tengan aplicación directa en beneficio de la comunidad.</p>
+    `,
     gallery: [
       "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_1-edited.jpeg"
     ]
@@ -1190,15 +1230,23 @@ export const newsData: NewsItem[] = [
   {
     id: 1905,
     title: "En miras a un Convenio entre la UNP y el MIDIS",
-    excerpt: "Conservación de semillas nativas protege patrimonio agrícola regional.",
+    excerpt: "Alianza estratégica para fortalecer programas sociales y de desarrollo en la región.",
     date: "18 Dic 2024",
     day: "18",
     month: "DIC",
     views: "1,432",
     image: "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_1-edited.jpeg",
-    category: "agricultura",
+    category: "alianzas",
     author: "DRSU",
-    content: `<p>Bancos de semillas comunitarios preservan variedades nativas de cultivos tradicionales, protegiendo la agrobiodiversidad y la soberanía alimentaria de la región.</p>`,
+    content: `
+      <p>La Universidad Nacional de Piura y el Ministerio de Desarrollo e Inclusión Social (MIDIS) iniciaron conversaciones para establecer un convenio de cooperación interinstitucional.</p>
+      
+      <p>Esta alianza estratégica permitirá fortalecer los programas sociales y de desarrollo en la región, articulando esfuerzos entre la academia y el Estado.</p>
+      
+      <h2>Áreas de Colaboración</h2>
+      
+      <p>El convenio contempla acciones conjuntas en investigación social, capacitación y desarrollo de programas que beneficien a las poblaciones más vulnerables de la región.</p>
+    `,
     gallery: [
       "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_1-edited.jpeg"
     ]
@@ -1206,15 +1254,23 @@ export const newsData: NewsItem[] = [
   {
     id: 1900,
     title: "Ponencia por el Día del Padre Unepino",
-    excerpt: "Formación técnica facilita independencia económica de mujeres en situación de violencia.",
+    excerpt: "Evento académico que reflexiona sobre la paternidad responsable y el rol del padre en la familia.",
     date: "12 Dic 2024",
     day: "12",
     month: "DIC",
     views: "1,987",
     image: "https://rsu.webunp.online/wp-content/uploads/2024/06/003_Foto_01-edited.jpeg",
-    category: "genero",
+    category: "eventos",
     author: "DRSU",
-    content: `<p>Mujeres sobrevivientes de violencia reciben capacitación en costura y confección, permitiéndoles generar ingresos propios y fortalecer su autonomía económica.</p>`,
+    content: `
+      <p>La DRSU organizó una ponencia especial en conmemoración del Día del Padre Unepino, evento que reflexiona sobre la paternidad responsable y el importante rol del padre en la familia.</p>
+      
+      <p>La actividad contó con la participación de docentes, trabajadores administrativos y padres de familia de la comunidad universitaria.</p>
+      
+      <h2>Temas Abordados</h2>
+      
+      <p>Se discutieron temas como la paternidad activa, la importancia de la presencia paterna en el desarrollo de los hijos y la conciliación entre vida laboral y familiar.</p>
+    `,
     gallery: [
       "https://rsu.webunp.online/wp-content/uploads/2024/06/003_Foto_01-edited.jpeg"
     ]
@@ -1222,15 +1278,23 @@ export const newsData: NewsItem[] = [
   {
     id: 1895,
     title: "Activación Ciudadana por el Día Mundial Contra el Trabajo Infantil",
-    excerpt: "Plataforma digital visibiliza experiencias inspiradoras de la región.",
+    excerpt: "Campaña de sensibilización sobre los derechos de la niñez y la erradicación del trabajo infantil.",
     date: "08 Dic 2024",
     day: "08",
     month: "DIC",
     views: "1,543",
     image: "https://rsu.webunp.online/wp-content/uploads/2024/06/002_Foto_02-Activaciones-edited.jpeg",
-    category: "comunicacion",
+    category: "derechos",
     author: "DRSU",
-    content: `<p>Un podcast creado por estudiantes de Comunicación documenta historias de superación, resiliencia y transformación social de comunidades de la región.</p>`,
+    content: `
+      <p>La DRSU realizó una activación ciudadana en conmemoración del Día Mundial contra el Trabajo Infantil, con el objetivo de sensibilizar a la población sobre los derechos de la niñez.</p>
+      
+      <p>La actividad incluyó stands informativos, distribución de material educativo y dinámicas interactivas que promovieron la reflexión sobre la erradicación del trabajo infantil.</p>
+      
+      <h2>Mensaje de Sensibilización</h2>
+      
+      <p>La campaña buscó crear conciencia sobre la importancia de proteger a los niños y garantizar su derecho a la educación, el juego y el desarrollo integral.</p>
+    `,
     gallery: [
       "https://rsu.webunp.online/wp-content/uploads/2024/06/002_Foto_02-Activaciones-edited.jpeg"
     ]
@@ -1238,15 +1302,25 @@ export const newsData: NewsItem[] = [
   {
     id: 1876,
     title: "JORNADA ARTÍSTICO CULTURAL POR EL DÍA MUNDIAL CONTRA EL TRABAJO INFANTIL",
-    excerpt: "Iniciativa de bienestar animal rescata y rehabilita perros y gatos en situación de calle.",
+    excerpt: "Evento artístico cultural que sensibiliza sobre los derechos de la niñez y la erradicación del trabajo infantil.",
     date: "03 Dic 2024",
     day: "03",
     month: "DIC",
     views: "2,087",
     image: "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_01-08062024-1024x473.jpeg",
-    category: "bienestar",
+    category: "derechos",
     author: "DRSU",
-    content: `<p>El programa de rehabilitación rescata animales callejeros, proporciona atención veterinaria y busca familias adoptivas responsables, promoviendo el bienestar animal.</p>`,
+    content: `
+      <p>La DRSU organizó una jornada artístico cultural en conmemoración del Día Mundial contra el Trabajo Infantil, con el objetivo de sensibilizar a la comunidad sobre los derechos de la niñez.</p>
+      
+      <p>El evento contó con presentaciones artísticas, obras de teatro y actividades culturales que promovieron la reflexión sobre la erradicación del trabajo infantil.</p>
+      
+      <h2>Actividades Realizadas</h2>
+      
+      <p>Se realizaron presentaciones de danza, teatro, música y actividades interactivas que involucraron a la comunidad universitaria y población en general.</p>
+      
+      <p>Esta iniciativa busca crear conciencia sobre la importancia de proteger los derechos de los niños y garantizar su desarrollo integral.</p>
+    `,
     gallery: [
       "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_01-08062024-1024x473.jpeg",
       "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_04-08062024-edited.jpeg"
@@ -1255,179 +1329,740 @@ export const newsData: NewsItem[] = [
   {
     id: 1871,
     title: "Reunión entre la DRSU y ONGs de la localidad",
-    excerpt: "Debate académico sobre desafíos y oportunidades de la migración en la región.",
+    excerpt: "Coordinación interinstitucional para fortalecer alianzas estratégicas en beneficio de la comunidad.",
     date: "28 Nov 2024",
     day: "28",
     month: "NOV",
     views: "1,654",
     image: "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg",
-    category: "derechos",
+    category: "alianzas",
     author: "DRSU",
-    content: `<p>El foro reunió a expertos, migrantes y organizaciones civiles para debatir sobre políticas migratorias, integración social y protección de derechos de personas migrantes.</p>`,
+    content: `
+      <p>La DRSU realizó una reunión estratégica con organizaciones no gubernamentales de la localidad para coordinar acciones conjuntas en beneficio de la comunidad.</p>
+      
+      <p>Este encuentro permitió establecer alianzas estratégicas y coordinar esfuerzos para maximizar el impacto social de los proyectos.</p>
+      
+      <h2>Objetivos de la Reunión</h2>
+      
+      <p>La reunión buscó identificar áreas de colaboración y establecer mecanismos de coordinación interinstitucional.</p>
+    `,
     gallery: [
       "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg"
     ]
   },
   {
     id: 1860,
-    title: "UNP y Procuraduría Regional promoverán actividades de Responsabilidad Social",
-    excerpt: "Sistema integrado produce alimentos de manera sostenible en espacios reducidos.",
+    title: "DRSU implementa sistemas de acuaponía en centros educativos",
+    excerpt: "Sistema integrado produce alimentos de manera sostenible en espacios reducidos para mejorar la nutrición escolar.",
     date: "22 Nov 2024",
     day: "22",
     month: "NOV",
     views: "1,876",
-    image: "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg",
+    image: "https://rsu.webunp.online/wp-content/uploads/2025/06/Foto_02-800x533.jpg",
     category: "agricultura",
     author: "DRSU",
-    content: `<p>Sistemas de acuaponía implementados en escuelas y centros comunitarios demuestran cómo producir peces y vegetales de manera sostenible en espacios urbanos limitados.</p>`,
+    content: `
+      <p>La DRSU implementó sistemas de acuaponía en escuelas y centros comunitarios que demuestran cómo producir peces y vegetales de manera sostenible en espacios urbanos limitados.</p>
+      
+      <p>Esta tecnología permite a las comunidades producir alimentos frescos y nutritivos, mejorando la seguridad alimentaria local.</p>
+      
+      <h2>Beneficios del Sistema</h2>
+      
+      <p>Los sistemas de acuaponía combinan la cría de peces con el cultivo de vegetales, creando un ecosistema sostenible que maximiza la producción de alimentos.</p>
+    `,
     gallery: [
-      "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg"
+      "https://rsu.webunp.online/wp-content/uploads/2025/06/Foto_02-800x533.jpg",
+      "https://rsu.webunp.online/wp-content/uploads/2025/06/Foto_01-2-800x533.jpg",
+      "https://rsu.webunp.online/wp-content/uploads/2025/06/Foto_03-800x533.jpg"
     ]
   },
   {
     id: 1859,
-    title: "UNP y Procuraduría Regional promoverán actividades de Responsabilidad Social",
-    excerpt: "Educación inclusiva promueve comprensión y apoyo a personas con autismo.",
+    title: "DRSU y Municipalidad de Piura coordinan acciones para la Cruzada Verde 2025",
+    excerpt: "Alianza estratégica para la recuperación de áreas verdes y espacios públicos en la ciudad de Piura.",
     date: "18 Nov 2024",
     day: "18",
     month: "NOV",
     views: "1,765",
-    image: "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg",
-    category: "inclusion",
+    image: "https://rsu.webunp.online/wp-content/uploads/2025/05/Foto_02-1-800x533.jpeg",
+    category: "ambiente",
     author: "DRSU",
-    content: `<p>La campaña de sensibilización sobre autismo capacita a docentes, estudiantes y familias en estrategias de inclusión y apoyo a personas dentro del espectro autista.</p>`,
+    content: `
+      <p>La DRSU y la Municipalidad de Piura establecieron una alianza estratégica para coordinar la Cruzada Verde 2025, iniciativa que busca recuperar y mantener las áreas verdes de la ciudad.</p>
+      
+      <p>Esta colaboración permitirá implementar programas de reforestación, mantenimiento de parques y educación ambiental en la comunidad piurana.</p>
+      
+      <h2>Objetivos de la Cruzada Verde</h2>
+      
+      <p>La iniciativa tiene como principales objetivos mejorar la calidad del aire, crear espacios de recreación y fomentar la conciencia ambiental entre los ciudadanos.</p>
+    `,
     gallery: [
-      "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg"
+      "https://rsu.webunp.online/wp-content/uploads/2025/05/Foto_02-1-800x533.jpeg"
     ]
   },
   {
      id: 1858,
-     title: "UNP y Procuraduría Regional promoverán actividades de Responsabilidad Social",
-     excerpt: "Cooperación entre emprendedores genera mercados justos y solidarios.",
+     title: "DRSU implementa programa de economía solidaria para productores locales",
+     excerpt: "Iniciativa que conecta a productores, artesanos y consumidores en un sistema de comercio justo.",
      date: "12 Nov 2024",
      day: "12",
      month: "NOV",
      views: "1,432",
-     image: "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg",
+     image: "https://rsu.webunp.online/wp-content/uploads/2024/09/001-P_Encuentro_II_GoRe_Desarrollo-Social-edited.jpg",
      category: "economia",
      author: "DRSU",
-     content: `<p>La red de economía solidaria conecta a productores, artesanos y consumidores en un sistema de comercio justo que beneficia a toda la comunidad.</p>`,
+     content: `
+       <p>La DRSU lanzó un programa de economía solidaria que conecta a productores locales, artesanos y consumidores en un sistema de comercio justo que beneficia a toda la comunidad.</p>
+       
+       <p>Esta iniciativa promueve el desarrollo económico sostenible y fortalece las cadenas de valor locales.</p>
+       
+       <h2>Beneficios del Programa</h2>
+       
+       <p>Los participantes pueden acceder a nuevos mercados, mejorar sus ingresos y contribuir al desarrollo económico de la región.</p>
+     `,
      gallery: [
-       "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg"
+       "https://rsu.webunp.online/wp-content/uploads/2024/09/001-P_Encuentro_II_GoRe_Desarrollo-Social-edited.jpg",
+       "https://rsu.webunp.online/wp-content/uploads/2024/09/002_P_Encuentro_II_CARE-2-edited.jpg",
+       "https://rsu.webunp.online/wp-content/uploads/2024/09/003_P_Encuentro_II_Burgos-edited.jpg"
      ]
    },
    {
      id: 1857,
-     title: "UNP y Procuraduría Regional promoverán actividades de Responsabilidad Social",
-     excerpt: "Tecnología limpia reduce el consumo de leña y mejora la salud familiar.",
+     title: "DRSU promueve tecnología limpia para mejorar la salud familiar",
+     excerpt: "Talleres comunitarios enseñan construcción de estufas ecológicas que reducen contaminación.",
      date: "08 Nov 2024",
      day: "08",
      month: "NOV",
      views: "1,654",
-     image: "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg",
+     image: "https://rsu.webunp.online/wp-content/uploads/2025/03/Foto_01-edited.jpg",
      category: "tecnologia",
      author: "DRSU",
-     content: `<p>Talleres comunitarios enseñan la construcción de estufas ecológicas que reducen el consumo de leña en un 60% y eliminan el humo intradomiciliario.</p>`,
+     content: `
+       <p>La DRSU implementó talleres comunitarios para enseñar la construcción de estufas ecológicas que reducen el consumo de leña en un 60% y eliminan el humo intradomiciliario.</p>
+       
+       <p>Esta tecnología limpia mejora significativamente la salud respiratoria de las familias y contribuye a la conservación del medio ambiente.</p>
+       
+       <h2>Impacto en la Salud</h2>
+       
+       <p>Las estufas ecológicas reducen las enfermedades respiratorias y mejoran la calidad de vida de las familias rurales.</p>
+     `,
      gallery: [
-       "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg"
+       "https://rsu.webunp.online/wp-content/uploads/2025/03/Foto_01-edited.jpg"
      ]
    },
    {
      id: 1856,
-     title: "UNP y Procuraduría Regional promoverán actividades de Responsabilidad Social",
-     excerpt: "Capacitación y colocación laboral promueve la inclusión en el mercado de trabajo.",
+     title: "DRSU facilita inclusión laboral de personas con discapacidad",
+     excerpt: "Programa especializado promueve la inserción laboral a través de capacitación y alianzas empresariales.",
      date: "03 Nov 2024",
      day: "03",
      month: "NOV",
      views: "1,987",
-     image: "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg",
+     image: "https://rsu.webunp.online/wp-content/uploads/2025/02/Foto_04-edited.jpg",
      category: "inclusion",
      author: "DRSU",
-     content: `<p>El programa facilita la inserción laboral de personas con discapacidad a través de capacitación especializada y alianzas con empresas comprometidas con la inclusión.</p>`,
+     content: `
+       <p>La DRSU implementó un programa especializado que facilita la inserción laboral de personas con discapacidad a través de capacitación especializada y alianzas con empresas comprometidas con la inclusión.</p>
+       
+       <p>Esta iniciativa promueve la igualdad de oportunidades y el desarrollo profesional de personas con discapacidad.</p>
+       
+       <h2>Componentes del Programa</h2>
+       
+       <p>El programa incluye capacitación técnica, desarrollo de habilidades blandas y acompañamiento en el proceso de inserción laboral.</p>
+     `,
      gallery: [
-       "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg"
+       "https://rsu.webunp.online/wp-content/uploads/2025/02/Foto_04-edited.jpg",
+       "https://rsu.webunp.online/wp-content/uploads/2025/02/Foto_03-edited.jpg",
+       "https://rsu.webunp.online/wp-content/uploads/2025/02/Foto_02-edited.jpg"
      ]
    },
    {
      id: 1855,
-     title: "UNP y Procuraduría Regional promoverán actividades de Responsabilidad Social",
-     excerpt: "Evento culinario preserva recetas tradicionales y apoya a cocineras locales.",
+     title: "DRSU organiza festival gastronómico para preservar recetas tradicionales",
+     excerpt: "Evento culinario reúne a cocineras tradicionales para compartir recetas ancestrales y promover la cultura regional.",
      date: "28 Oct 2024",
      day: "28",
      month: "OCT",
      views: "2,234",
-     image: "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg",
+     image: "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_01-08062024-1024x473.jpeg",
      category: "cultura",
      author: "DRSU",
-     content: `<p>El festival gastronómico reunió a cocineras tradicionales para compartir recetas ancestrales y promover la valoración de la cocina regional.</p>`,
+     content: `
+       <p>La DRSU organizó un festival gastronómico que reunió a cocineras tradicionales para compartir recetas ancestrales y promover la valoración de la cocina regional.</p>
+       
+       <p>Este evento busca preservar el patrimonio culinario de la región y apoyar a las cocineras locales en su desarrollo económico.</p>
+       
+       <h2>Objetivos del Festival</h2>
+       
+       <p>El festival promueve la identidad cultural, fortalece las tradiciones culinarias y genera oportunidades económicas para las participantes.</p>
+     `,
      gallery: [
-       "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg"
+       "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_01-08062024-1024x473.jpeg",
+       "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_04-08062024-edited.jpeg"
      ]
    },
    {
      id: 1854,
-     title: "UNP y Procuraduría Regional promoverán actividades de Responsabilidad Social",
-     excerpt: "Brigadas de salud llevan vacunas esenciales a zonas de difícil acceso.",
+     title: "DRSU organiza brigadas de salud para zonas de difícil acceso",
+     excerpt: "Brigadas médicas llevan vacunas esenciales y atención preventiva a comunidades alejadas.",
      date: "22 Oct 2024",
      day: "22",
      month: "OCT",
      views: "1,876",
-     image: "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg",
+     image: "https://rsu.webunp.online/wp-content/uploads/2024/07/Foto_02-1-edited.jpeg",
      category: "salud",
      author: "DRSU",
-     content: `<p>Brigadas médicas recorrieron comunidades alejadas para completar esquemas de vacunación, protegiendo especialmente a niños y adultos mayores.</p>`,
+     content: `
+       <p>La DRSU organizó brigadas médicas que recorrieron comunidades alejadas para completar esquemas de vacunación, protegiendo especialmente a niños y adultos mayores.</p>
+       
+       <p>Esta iniciativa garantiza el acceso a servicios de salud esenciales en zonas donde la atención médica es limitada.</p>
+       
+       <h2>Impacto de las Brigadas</h2>
+       
+       <p>Las brigadas han logrado vacunar a más de 500 personas en comunidades rurales, mejorando significativamente la cobertura de salud en la región.</p>
+     `,
      gallery: [
-       "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg"
+       "https://rsu.webunp.online/wp-content/uploads/2024/07/Foto_02-1-edited.jpeg"
      ]
    },
    {
      id: 1853,
-     title: "UNP y Procuraduría Regional promoverán actividades de Responsabilidad Social",
-     excerpt: "Tecnología sostenible convierte residuos orgánicos en gas para cocinar.",
+     title: "DRSU implementa biodigestores familiares para energía sostenible",
+     excerpt: "Tecnología sostenible convierte residuos orgánicos en biogás para cocinar, reduciendo dependencia de combustibles fósiles.",
      date: "18 Oct 2024",
      day: "18",
      month: "OCT",
      views: "1,543",
-     image: "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg",
+     image: "https://rsu.webunp.online/wp-content/uploads/2024/07/Foto_02-edited.jpeg",
      category: "tecnologia",
      author: "DRSU",
-     content: `<p>Biodigestores familiares transforman residuos orgánicos en biogás, proporcionando energía limpia para cocinar y reduciendo la dependencia de combustibles fósiles.</p>`,
+     content: `
+       <p>La DRSU implementó biodigestores familiares que transforman residuos orgánicos en biogás, proporcionando energía limpia para cocinar y reduciendo la dependencia de combustibles fósiles.</p>
+       
+       <p>Esta tecnología sostenible mejora la calidad de vida de las familias rurales y contribuye a la conservación del medio ambiente.</p>
+       
+       <h2>Beneficios de los Biodigestores</h2>
+       
+       <p>Los biodigestores reducen costos de energía, mejoran la gestión de residuos y proporcionan fertilizante orgánico para la agricultura.</p>
+     `,
      gallery: [
-       "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg"
+       "https://rsu.webunp.online/wp-content/uploads/2024/07/Foto_02-edited.jpeg"
      ]
    },
    {
      id: 1852,
-     title: "UNP y Procuraduría Regional promoverán actividades de Responsabilidad Social",
-     excerpt: "Atención especializada ayuda a comunidades afectadas por emergencias.",
+     title: "DRSU brinda apoyo especializado a comunidades afectadas por emergencias",
+     excerpt: "Psicólogos y trabajadores sociales facilitan la recuperación emocional de familias afectadas por desastres naturales.",
      date: "12 Oct 2024",
      day: "12",
      month: "OCT",
      views: "1,765",
-     image: "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg",
+     image: "https://rsu.webunp.online/wp-content/uploads/2024/06/003_Foto_01-edited.jpeg",
      category: "apoyo",
      author: "DRSU",
-     content: `<p>Psicólogos y trabajadores sociales brindan apoyo especializado a familias afectadas por desastres naturales, facilitando su recuperación emocional.</p>`,
+     content: `
+       <p>La DRSU implementó un programa de apoyo especializado donde psicólogos y trabajadores sociales brindan atención a familias afectadas por desastres naturales, facilitando su recuperación emocional.</p>
+       
+       <p>Este servicio es fundamental para ayudar a las comunidades a superar los traumas y reconstruir sus vidas después de emergencias.</p>
+       
+       <h2>Servicios de Apoyo</h2>
+       
+       <p>El programa incluye terapia psicológica, apoyo social, orientación familiar y acompañamiento en el proceso de recuperación.</p>
+     `,
      gallery: [
-       "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg"
+       "https://rsu.webunp.online/wp-content/uploads/2024/06/003_Foto_01-edited.jpeg"
      ]
    },
    {
      id: 1851,
-     title: "UNP y Procuraduría Regional promoverán actividades de Responsabilidad Social",
-     excerpt: "Primera promoción de voluntarios certificados en responsabilidad social universitaria.",
+     title: "DRSU certifica primera promoción de voluntarios en responsabilidad social universitaria",
+     excerpt: "Ceremonia histórica reconoce a 150 estudiantes que completaron 200 horas de servicio comunitario.",
      date: "08 Oct 2024",
      day: "08",
      month: "OCT",
      views: "2,456",
-     image: "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg",
+     image: "https://rsu.webunp.online/wp-content/uploads/2024/08/005_Izamiento_Autoridades-edited.jpg",
      category: "eventos",
      author: "DRSU",
-     content: `<p>La primera ceremonia de graduación de voluntarios RSU certificó a 150 estudiantes que completaron 200 horas de servicio comunitario, marcando un hito en la historia de la responsabilidad social universitaria.</p>`,
+     content: `
+       <p>La DRSU realizó la primera ceremonia de graduación de voluntarios RSU, certificando a 150 estudiantes que completaron 200 horas de servicio comunitario, marcando un hito en la historia de la responsabilidad social universitaria.</p>
+       
+       <p>Este evento representa un logro significativo en el compromiso de la universidad con el desarrollo social de la región.</p>
+       
+       <h2>Reconocimiento Histórico</h2>
+       
+       <p>La certificación formaliza el compromiso de los estudiantes con la responsabilidad social y establece un precedente para futuras generaciones.</p>
+     `,
      gallery: [
-       "https://rsu.webunp.online/wp-content/uploads/2024/06/Foto_02-28052024-edited.jpg"
+       "https://rsu.webunp.online/wp-content/uploads/2024/08/005_Izamiento_Autoridades-edited.jpg",
+       "https://rsu.webunp.online/wp-content/uploads/2024/08/007_Izamiento_Directores_URSU-1-edited.jpg",
+       "https://rsu.webunp.online/wp-content/uploads/2024/08/009_Izamiento_Directores_URSU-3-edited.jpg"
      ]
-   }
+   },
+  {
+    id: 2721,
+    title: "DRSU-UNP e INDECI organizan Seminario de Gestión Reactiva del Riesgo de Desastres",
+    excerpt: "Seminario especializado que fortalece las capacidades de respuesta ante emergencias y desastres naturales.",
+    date: "09 Oct 2025",
+    day: "09",
+    month: "OCT",
+    views: "1,156",
+    image: "https://rsu.webunp.online/wp-content/uploads/2025/10/Foto_02-edited.jpg",
+    category: "capacitacion",
+    author: "DRSU",
+    content: `
+      <p>La DRSU-UNP en colaboración con INDECI organizó un seminario especializado sobre "Gestión Reactiva del Riesgo de Desastres", dirigido a fortalecer las capacidades de respuesta ante emergencias.</p>
+      
+      <p>El evento contó con la participación de expertos en gestión de riesgos, autoridades locales y representantes de organizaciones de primera respuesta.</p>
+      
+      <h2>Objetivos del Seminario</h2>
+      
+      <p>El seminario busca mejorar la coordinación interinstitucional y fortalecer los protocolos de respuesta ante desastres naturales en la región Piura.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2025/10/Foto_02-edited.jpg",
+      "https://rsu.webunp.online/wp-content/uploads/2025/10/INDECI_Flyer_09102025-1024x1024.jpg"
+    ]
+  },
+  {
+    id: 1763,
+    title: "Conferencias sobre la Diversidad Biológica de la Región Piura",
+    excerpt: "Evento académico que destaca la importancia de la biodiversidad regional y su conservación.",
+    date: "23 May 2024",
+    day: "23",
+    month: "MAY",
+    views: "1,234",
+    image: "https://rsu.webunp.online/wp-content/uploads/2024/05/Afiche_Biodiversidad-2024-para-UNP-1024x1024.jpg",
+    category: "ambiente",
+    author: "DRSU",
+    content: `
+      <p>La DRSU organizó conferencias especializadas sobre la diversidad biológica de la región Piura, destacando la importancia de la conservación de nuestros ecosistemas únicos.</p>
+      
+      <p>El evento reunió a biólogos, conservacionistas y estudiantes para analizar las estrategias de protección de la biodiversidad regional.</p>
+      
+      <h2>Importancia de la Biodiversidad</h2>
+      
+      <p>La región Piura alberga ecosistemas únicos que requieren protección y conservación para las futuras generaciones.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2024/05/Afiche_Biodiversidad-2024-para-UNP-1024x1024.jpg",
+      "https://rsu.webunp.online/wp-content/uploads/2024/05/Foto_01-edited.jpeg",
+      "https://rsu.webunp.online/wp-content/uploads/2024/05/Foto_2-edited.jpeg"
+    ]
+  },
+  {
+    id: 1749,
+    title: "Formación del Comité de Responsabilidad Social Interinstitucional",
+    excerpt: "Creación de red interinstitucional para apoyar a niños, adolescentes y jóvenes en situación de vulnerabilidad.",
+    date: "15 May 2024",
+    day: "15",
+    month: "MAY",
+    views: "987",
+    image: "https://rsu.webunp.online/wp-content/uploads/2024/05/441530564_17893410672002071_8341304383441376397_n-edited.jpg",
+    category: "alianzas",
+    author: "DRSU",
+    content: `
+      <p>Se constituyó el Comité de Responsabilidad Social Interinstitucional para coordinar esfuerzos en apoyo a niños, adolescentes y jóvenes en situación de vulnerabilidad en la región Piura.</p>
+      
+      <p>Esta alianza estratégica reúne a instituciones públicas, privadas y organizaciones civiles comprometidas con el desarrollo social.</p>
+      
+      <h2>Objetivos del Comité</h2>
+      
+      <p>El comité busca articular acciones conjuntas para mejorar la calidad de vida de los grupos más vulnerables de la sociedad.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2024/05/441530564_17893410672002071_8341304383441376397_n-edited.jpg"
+    ]
+  },
+  {
+    id: 1706,
+    title: "DRSU-UNP organiza reunión para atender problemática de niños y adolescentes vulnerables",
+    excerpt: "Iniciativa que busca articular respuestas integrales para la protección de la niñez y adolescencia en riesgo.",
+    date: "26 Abr 2024",
+    day: "26",
+    month: "ABR",
+    views: "1,456",
+    image: "https://rsu.webunp.online/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-26-at-9.46.47-AM-1-edited.jpeg",
+    category: "apoyo",
+    author: "DRSU",
+    content: `
+      <p>La DRSU-UNP organizó una reunión estratégica para abordar la problemática de niños, adolescentes y jóvenes en estado de vulnerabilidad en la región Piura.</p>
+      
+      <p>El encuentro reunió a representantes de diversas instituciones para coordinar acciones de protección y desarrollo integral.</p>
+      
+      <h2>Compromiso Institucional</h2>
+      
+      <p>Las instituciones participantes se comprometieron a trabajar de manera coordinada para mejorar las condiciones de vida de los grupos vulnerables.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-26-at-9.46.47-AM-1-edited.jpeg"
+    ]
+  },
+  {
+    id: 1701,
+    title: "Visita de la ONG Plan Internacional a la DRSU",
+    excerpt: "Reunión de coordinación para fortalecer alianzas estratégicas en beneficio de la niñez y adolescencia.",
+    date: "25 Abr 2024",
+    day: "25",
+    month: "ABR",
+    views: "1,123",
+    image: "https://rsu.webunp.online/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-26-at-9.47.53-AM-edited.jpeg",
+    category: "alianzas",
+    author: "DRSU",
+    content: `
+      <p>Representantes de la ONG Plan Internacional visitaron la DRSU para coordinar acciones conjuntas en beneficio de la niñez y adolescencia de la región.</p>
+      
+      <p>Esta alianza estratégica permitirá implementar programas de desarrollo integral para niños y jóvenes en situación de vulnerabilidad.</p>
+      
+      <h2>Áreas de Colaboración</h2>
+      
+      <p>Se identificaron áreas prioritarias de trabajo conjunto en educación, salud, protección y desarrollo comunitario.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-26-at-9.47.53-AM-edited.jpeg"
+    ]
+  },
+  {
+    id: 1644,
+    title: "Encuesta dirigida a estudiantes de la UNP",
+    excerpt: "Investigación para conocer las necesidades y expectativas de los estudiantes en materia de responsabilidad social universitaria.",
+    date: "15 Abr 2024",
+    day: "15",
+    month: "ABR",
+    views: "2,345",
+    image: "https://rsu.webunp.online/wp-content/uploads/2024/04/Encuesta_Estudiantes-1024x1024.jpg",
+    category: "investigacion",
+    author: "DRSU",
+    content: `
+      <p>La DRSU lanzó una encuesta dirigida a estudiantes de la UNP para conocer sus necesidades y expectativas en materia de responsabilidad social universitaria.</p>
+      
+      <p>Los resultados de esta investigación permitirán mejorar los programas y servicios ofrecidos a la comunidad estudiantil.</p>
+      
+      <h2>Objetivos de la Encuesta</h2>
+      
+      <p>La encuesta busca identificar áreas de mejora y nuevas oportunidades de participación estudiantil en proyectos de responsabilidad social.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2024/04/Encuesta_Estudiantes-1024x1024.jpg"
+    ]
+  },
+  {
+    id: 1639,
+    title: "Encuesta dirigida a docentes de la UNP",
+    excerpt: "Investigación para evaluar la participación docente en programas de responsabilidad social universitaria.",
+    date: "12 Abr 2024",
+    day: "12",
+    month: "ABR",
+    views: "1,876",
+    image: "https://rsu.webunp.online/wp-content/uploads/2024/04/Encuesta_Docentes-1024x899.jpg",
+    category: "investigacion",
+    author: "DRSU",
+    content: `
+      <p>La DRSU realizó una encuesta dirigida a docentes de la UNP para evaluar su participación en programas de responsabilidad social universitaria.</p>
+      
+      <p>Esta investigación permitirá identificar oportunidades de fortalecimiento de la participación docente en proyectos sociales.</p>
+      
+      <h2>Importancia de la Participación Docente</h2>
+      
+      <p>Los docentes son actores clave en la formación de estudiantes comprometidos con la responsabilidad social.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2024/04/Encuesta_Docentes-1024x899.jpg"
+    ]
+  },
+  {
+    id: 1631,
+    title: "Curso Taller sobre Evaluación de Daños y Análisis de Necesidades",
+    excerpt: "Capacitación especializada en gestión de riesgos de desastres para fortalecer las capacidades de respuesta ante emergencias.",
+    date: "08 Abr 2024",
+    day: "08",
+    month: "ABR",
+    views: "1,654",
+    image: "https://rsu.webunp.online/wp-content/uploads/2024/04/INDECI_001-edited.jpg",
+    category: "capacitacion",
+    author: "DRSU",
+    content: `
+      <p>La DRSU organizó un curso taller especializado sobre "Evaluación de Daños y Análisis de Necesidades" en colaboración con INDECI.</p>
+      
+      <p>Esta capacitación fortalece las capacidades de los participantes en la gestión de riesgos de desastres y respuesta ante emergencias.</p>
+      
+      <h2>Contenido del Curso</h2>
+      
+      <p>El curso incluye metodologías de evaluación de daños, análisis de necesidades y protocolos de respuesta ante desastres naturales.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2024/04/INDECI_001-edited.jpg"
+    ]
+  },
+  {
+    id: 1626,
+    title: "La Importancia del Autodiagnóstico en la UNP",
+    excerpt: "Proceso de autoevaluación institucional para identificar fortalezas y áreas de mejora en responsabilidad social universitaria.",
+    date: "05 Abr 2024",
+    day: "05",
+    month: "ABR",
+    views: "1,432",
+    image: "https://rsu.webunp.online/wp-content/uploads/2024/04/Autodiagnostico_002-edited.jpg",
+    category: "investigacion",
+    author: "DRSU",
+    content: `
+      <p>La DRSU implementó un proceso de autodiagnóstico institucional para evaluar el estado actual de la responsabilidad social universitaria en la UNP.</p>
+      
+      <p>Este proceso permite identificar fortalezas, debilidades y oportunidades de mejora en la gestión de la RSU.</p>
+      
+      <h2>Beneficios del Autodiagnóstico</h2>
+      
+      <p>El autodiagnóstico proporciona una base sólida para la planificación estratégica y el mejoramiento continuo de los programas de RSU.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2024/04/Autodiagnostico_002-edited.jpg"
+    ]
+  },
+  {
+    id: 1620,
+    title: "Primera Reunión de Directores de Unidades de Responsabilidad Social Universitaria",
+    excerpt: "Encuentro estratégico para fortalecer el compromiso social de las facultades y unidades académicas.",
+    date: "02 Abr 2024",
+    day: "02",
+    month: "ABR",
+    views: "1,789",
+    image: "https://rsu.webunp.online/wp-content/uploads/2024/04/Reu_Directores-002-edited.jpg",
+    category: "eventos",
+    author: "DRSU",
+    content: `
+      <p>Se realizó la primera reunión de directores de unidades de responsabilidad social universitaria de las facultades de la UNP.</p>
+      
+      <p>Este encuentro estratégico busca fortalecer el compromiso social de las facultades y coordinar acciones conjuntas.</p>
+      
+      <h2>Objetivos de la Reunión</h2>
+      
+      <p>La reunión permitió establecer lineamientos comunes y coordinar esfuerzos para el desarrollo de la RSU en toda la universidad.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2024/04/Reu_Directores-002-edited.jpg"
+    ]
+  },
+  {
+    id: 1614,
+    title: "Delegación de la Universidad Nacional de Huancavelica realiza pasantía en la UNP",
+    excerpt: "Intercambio académico que fortalece las relaciones interuniversitarias y promueve el aprendizaje mutuo en RSU.",
+    date: "28 Mar 2024",
+    day: "28",
+    month: "MAR",
+    views: "1,567",
+    image: "https://rsu.webunp.online/wp-content/uploads/2024/04/Huancavelica_001-edited.jpg",
+    category: "alianzas",
+    author: "DRSU",
+    content: `
+      <p>Una delegación de la Universidad Nacional de Huancavelica realizó una pasantía en la UNP para conocer las experiencias en responsabilidad social universitaria.</p>
+      
+      <p>Este intercambio académico fortalece las relaciones interuniversitarias y promueve el aprendizaje mutuo en materia de RSU.</p>
+      
+      <h2>Beneficios del Intercambio</h2>
+      
+      <p>La pasantía permite compartir buenas prácticas y fortalecer las capacidades institucionales en responsabilidad social universitaria.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2024/04/Huancavelica_001-edited.jpg"
+    ]
+  },
+  {
+    id: 1599,
+    title: "VIII Encuentro de Directores de RSU",
+    excerpt: "Evento nacional que reúne a directores de responsabilidad social universitaria de todo el país para intercambiar experiencias.",
+    date: "16 Nov 2023",
+    day: "16",
+    month: "NOV",
+    views: "2,234",
+    image: "https://rsu.webunp.online/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-16-at-12.32.10-1024x1024.jpeg",
+    category: "eventos",
+    author: "DRSU",
+    content: `
+      <p>Se realizó el VIII Encuentro de Directores de RSU, evento nacional que reúne a representantes de universidades de todo el país.</p>
+      
+      <p>Este encuentro permite el intercambio de experiencias y buenas prácticas en responsabilidad social universitaria.</p>
+      
+      <h2>Objetivos del Encuentro</h2>
+      
+      <p>El evento busca fortalecer las redes interuniversitarias y promover la colaboración en proyectos de impacto social.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-16-at-12.32.10-1024x1024.jpeg",
+      "https://rsu.webunp.online/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-16-at-12.32.09-1024x1024.jpeg"
+    ]
+  },
+  {
+    id: 1595,
+    title: "VIII ENARSU 2023",
+    excerpt: "Encuentro Nacional de Responsabilidad Social Universitaria que reúne a universidades de todo el país.",
+    date: "15 Nov 2023",
+    day: "15",
+    month: "NOV",
+    views: "3,456",
+    image: "https://rsu.webunp.online/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-16-at-09.16.51-1-1-1024x1024.jpeg",
+    category: "eventos",
+    author: "DRSU",
+    content: `
+      <p>Se realizó el VIII Encuentro Nacional de Responsabilidad Social Universitaria (ENARSU) 2023, evento que reúne a universidades de todo el país.</p>
+      
+      <p>Este encuentro nacional promueve el intercambio de experiencias y fortalece las redes de colaboración interuniversitaria.</p>
+      
+      <h2>Importancia del ENARSU</h2>
+      
+      <p>El ENARSU es el evento más importante del país en materia de responsabilidad social universitaria, reuniendo a los principales actores del sector.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-16-at-09.16.51-1-1-1024x1024.jpeg",
+      "https://rsu.webunp.online/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-16-at-09.16.51-2-1024x1024.jpeg"
+    ]
+  },
+  {
+    id: 1583,
+    title: "Entrevista exclusiva con el Dr. Manuel Burgos sobre el VIII ENARSU",
+    excerpt: "Medios regionales entrevistan al Director General de RSU sobre el impacto del VIII ENARSU en la comunidad académica.",
+    date: "23 Oct 2023",
+    day: "23",
+    month: "OCT",
+    views: "1,876",
+    image: "https://rsu.webunp.online/wp-content/uploads/2023/10/WhatsApp-Image-2023-10-23-at-10.39.26-1024x768.jpeg",
+    category: "comunicacion",
+    author: "DRSU",
+    content: `
+      <p>Medios de la región como Revista Encuentro, Piura TV y Cabildo Noticias realizaron una entrevista exclusiva con el Dr. Manuel Burgos, Director General de RSU.</p>
+      
+      <p>La entrevista abordó el impacto del VIII ENARSU en la comunidad académica y el compromiso de las universidades con la sociedad.</p>
+      
+      <h2>Temas Abordados</h2>
+      
+      <p>Se discutieron temas como el rol de las universidades en el desarrollo social y las estrategias para fortalecer la responsabilidad social universitaria.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2023/10/WhatsApp-Image-2023-10-23-at-10.39.26-1024x768.jpeg"
+    ]
+  },
+  {
+    id: 1568,
+    title: "VIII ENARSU - Evento Nacional de Responsabilidad Social Universitaria",
+    excerpt: "Encuentro nacional que reúne a universidades de todo el país para fortalecer la responsabilidad social universitaria.",
+    date: "20 Oct 2023",
+    day: "20",
+    month: "OCT",
+    views: "2,567",
+    image: "https://rsu.webunp.online/wp-content/uploads/2023/10/Flyer-QR-940x788.jpg",
+    category: "eventos",
+    author: "DRSU",
+    content: `
+      <p>Se realizó el VIII ENARSU, evento nacional que reúne a universidades de todo el país para fortalecer la responsabilidad social universitaria.</p>
+      
+      <p>Este encuentro promueve el intercambio de experiencias y fortalece las redes de colaboración interuniversitaria.</p>
+      
+      <h2>Objetivos del Evento</h2>
+      
+      <p>El ENARSU busca promover la responsabilidad social universitaria como eje fundamental del quehacer universitario.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2023/10/Flyer-QR-940x788.jpg"
+    ]
+  },
+  {
+    id: 1476,
+    title: "Conferencia Magistral: Responsabilidad Social Universitaria, Fundamento de la Vida Universitaria",
+    excerpt: "Conferencia magistral que aborda la importancia de la RSU como pilar fundamental de la educación superior.",
+    date: "19 Sep 2023",
+    day: "19",
+    month: "SEP",
+    views: "1,654",
+    image: "https://rsu.webunp.online/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-19-at-09.49.07-1024x1024.jpeg",
+    category: "eventos",
+    author: "DRSU",
+    content: `
+      <p>Se realizó la conferencia magistral "Responsabilidad Social Universitaria, Fundamento de la Vida Universitaria" dirigida a la comunidad académica.</p>
+      
+      <p>Esta conferencia aborda la importancia de la RSU como pilar fundamental de la educación superior y su impacto en la sociedad.</p>
+      
+      <h2>Importancia de la Conferencia</h2>
+      
+      <p>La conferencia busca sensibilizar a la comunidad universitaria sobre la importancia de la responsabilidad social en la formación profesional.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-19-at-09.49.07-1024x1024.jpeg"
+    ]
+  },
+  {
+    id: 1439,
+    title: "Conferencia de Prensa por el I Aniversario de la DRSU",
+    excerpt: "Evento de prensa que presenta los logros y avances de la DRSU en su primer año de funcionamiento.",
+    date: "15 Jul 2023",
+    day: "15",
+    month: "JUL",
+    views: "1,987",
+    image: "https://rsu.webunp.online/wp-content/uploads/2023/07/Conferencia_Prensa_02-1005x429.jpg",
+    category: "eventos",
+    author: "DRSU",
+    content: `
+      <p>Se realizó una conferencia de prensa para conmemorar el primer aniversario de la DRSU, presentando los logros y avances alcanzados.</p>
+      
+      <p>El evento contó con la participación de medios de comunicación regionales y autoridades universitarias.</p>
+      
+      <h2>Logros Presentados</h2>
+      
+      <p>Se destacaron los principales logros del primer año de funcionamiento de la DRSU y las proyecciones para el futuro.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2023/07/Conferencia_Prensa_02-1005x429.jpg"
+    ]
+  },
+  {
+    id: 1432,
+    title: "UNP organizará Encuentro Nacional de Responsabilidad Social Universitaria ENARSU 2023",
+    excerpt: "Anuncio oficial de la organización del ENARSU 2023 por parte de la Universidad Nacional de Piura.",
+    date: "12 Jul 2023",
+    day: "12",
+    month: "JUL",
+    views: "2,345",
+    image: "https://rsu.webunp.online/wp-content/uploads/2023/07/Foto_reunion_ENARSU-002-1-1024x1024.jpg",
+    category: "eventos",
+    author: "DRSU",
+    content: `
+      <p>La Universidad Nacional de Piura anunció oficialmente la organización del Encuentro Nacional de Responsabilidad Social Universitaria ENARSU 2023.</p>
+      
+      <p>Este evento nacional reunirá a universidades de todo el país para fortalecer la responsabilidad social universitaria.</p>
+      
+      <h2>Importancia del Evento</h2>
+      
+      <p>El ENARSU 2023 representa una oportunidad única para fortalecer las redes interuniversitarias y promover la colaboración en proyectos de impacto social.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2023/07/Foto_reunion_ENARSU-002-1-1024x1024.jpg"
+    ]
+  },
+  {
+    id: 1390,
+    title: "I Aniversario de la DRSU",
+    excerpt: "Celebración del primer aniversario de la Dirección de Responsabilidad Social Universitaria de la UNP.",
+    date: "10 Jul 2023",
+    day: "10",
+    month: "JUL",
+    views: "3,456",
+    image: "https://rsu.webunp.online/wp-content/uploads/2023/07/1-1024x1024.jpg",
+    category: "eventos",
+    author: "DRSU",
+    content: `
+      <p>Se celebró el primer aniversario de la Dirección de Responsabilidad Social Universitaria de la UNP, marcando un hito importante en la historia institucional.</p>
+      
+      <p>Este evento conmemora los logros alcanzados en el primer año de funcionamiento de la DRSU.</p>
+      
+      <h2>Logros del Primer Año</h2>
+      
+      <p>Durante su primer año, la DRSU ha logrado implementar diversos programas y proyectos de impacto social en la región.</p>
+    `,
+    gallery: [
+      "https://rsu.webunp.online/wp-content/uploads/2023/07/1-1024x1024.jpg",
+      "https://rsu.webunp.online/wp-content/uploads/2023/07/2-1-1024x1024.jpg",
+      "https://rsu.webunp.online/wp-content/uploads/2023/07/3-1024x1024.jpg",
+      "https://rsu.webunp.online/wp-content/uploads/2023/07/4-1024x1024.jpg"
+    ]
+  }
 ];
 
 // Función para obtener noticias por categoría
@@ -1482,5 +2117,6 @@ export const newsCategories = [
   { id: 'mentoria', name: 'Mentoría', color: 'bg-blue-200 text-blue-900' },
   { id: 'bienestar', name: 'Bienestar Animal', color: 'bg-green-200 text-green-900' },
   { id: 'agricultura', name: 'Agricultura', color: 'bg-yellow-200 text-yellow-900' },
-  { id: 'economia', name: 'Economía Solidaria', color: 'bg-purple-200 text-purple-900' }
+  { id: 'economia', name: 'Economía Solidaria', color: 'bg-purple-200 text-purple-900' },
+  { id: 'investigacion', name: 'Investigación', color: 'bg-indigo-200 text-indigo-900' }
 ];
