@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/presentation/components/ui/card';
 import { Badge } from '@/presentation/components/ui/badge';
 import { useScrollAnimation } from '@/presentation/hooks/useScrollAnimation';
@@ -68,13 +69,17 @@ export const NewsSection: React.FC = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -5 }}
             >
-              <Card className="h-full overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer">
+              <Link to={`/noticias/${news.id}`} className="block">
+                <Card className="h-full overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer p-0">
                 {/* Image */}
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-48 w-full overflow-hidden bg-gray-100">
                   <img 
                     src={news.image} 
                     alt={news.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    style={{ 
+                      objectPosition: 'center center'
+                    }}
                   />
                   <div className="absolute top-4 left-4">
                     <Badge className={news.categoryColor}>
@@ -106,7 +111,8 @@ export const NewsSection: React.FC = () => {
                     <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
                   </div>
                 </CardContent>
-              </Card>
+                </Card>
+              </Link>
             </motion.div>
           ))}
         </div>
@@ -118,9 +124,11 @@ export const NewsSection: React.FC = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <button className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl">
-            Ver todas las noticias
-          </button>
+          <Link to="/noticias" className="inline-block">
+            <button className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl">
+              Ver todas las noticias
+            </button>
+          </Link>
         </motion.div>
       </div>
     </section>

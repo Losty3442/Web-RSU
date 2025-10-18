@@ -72,16 +72,17 @@ export const NewsGrid: React.FC<NewsGridProps> = ({
           to={`/noticias/${news.id}`}
           className="group cursor-pointer"
         >
-          <Card className="overflow-hidden border-0 shadow-none hover:shadow-lg transition-all duration-300 bg-white">
+          <Card className="overflow-hidden border-0 shadow-none hover:shadow-lg transition-all duration-300 bg-white p-0">
             {/* Imagen principal */}
-            <div className="relative">
-              <AspectRatio ratio="video" className="overflow-hidden rounded-xl">
-                <img
-                  src={getImageForNews(news)}
-                  alt={news.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </AspectRatio>
+            <div className="relative h-48 w-full overflow-hidden bg-gray-100">
+              <img
+                src={getImageForNews(news)}
+                alt={news.title}
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                style={{ 
+                  objectPosition: 'center center'
+                }}
+              />
 
               {/* Badge de categoría */}
               <div className="absolute top-3 left-3">

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 import { AuroraText } from "@/presentation/components/ui/aurora-text";
 
 // Array de imágenes para el carrusel
@@ -150,7 +149,7 @@ export const HeroSection: React.FC = () => {
                 >
                   <AuroraText
                     className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold"
-                    colors={["#FFFFFF", "#FFD700", "#FF6B35", "#FF4500"]}
+                    colors={["#FFFFFF", "#00BFFF", "#1E90FF", "#4169E1"]}
                     speed={1}
                   >
                     Responsabilidad Social
@@ -241,37 +240,6 @@ export const HeroSection: React.FC = () => {
         </motion.div>
       </div>
 
-      {/* Scroll Down Indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 2.5 }}
-      >
-        <motion.div
-          className="flex flex-col items-center space-y-2 cursor-pointer group"
-          animate={{ y: [0, 8, 0] }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-          whileHover={{ scale: 1.1 }}
-        >
-          <span className="text-white/60 text-xs font-medium tracking-wider uppercase">
-            Scroll
-          </span>
-          <motion.div
-            className="p-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 group-hover:bg-white/20 transition-colors duration-300"
-            whileHover={{ scale: 1.1 }}
-          >
-            <ChevronDown
-              size={20}
-              className="text-white/80 group-hover:text-white transition-colors duration-300"
-            />
-          </motion.div>
-        </motion.div>
-      </motion.div>
     </section>
   );
 };

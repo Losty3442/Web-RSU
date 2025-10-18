@@ -89,40 +89,36 @@ const NewsDetailPage: React.FC = () => {
           <div className="lg:col-span-2 space-y-8">
             {/* Galería de imágenes */}
             <div className="space-y-4">
-              <AspectRatio
-                ratio="video"
-                className="overflow-hidden rounded-2xl"
-              >
+              <div className="relative h-96 overflow-hidden rounded-2xl">
                 <img
                   src={news.image || "/images/noticias1.jpg"}
                   alt={news.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src = "/images/noticias1.jpg";
                   }}
                 />
-              </AspectRatio>
+              </div>
 
               {/* Mini galería */}
               {news.gallery && news.gallery.length > 0 && (
                 <div className="grid grid-cols-4 gap-2">
                   {news.gallery.slice(0, 4).map((image, index) => (
-                    <AspectRatio
+                    <div
                       key={index}
-                      ratio="square"
-                      className="overflow-hidden rounded-lg"
+                      className="relative h-20 overflow-hidden rounded-lg"
                     >
                       <img
                         src={image}
                         alt={`Galería ${index + 1}`}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-200 cursor-pointer"
+                        className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-200 cursor-pointer"
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
                           target.src = "/images/noticias1.jpg";
                         }}
                       />
-                    </AspectRatio>
+                    </div>
                   ))}
                 </div>
               )}

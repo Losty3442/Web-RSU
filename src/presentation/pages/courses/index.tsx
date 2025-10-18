@@ -147,12 +147,15 @@ const CoursesPage: React.FC = () => {
             {courses.map((course) => {
               const StatusIcon = getStatusIcon(course.status);
               return (
-                <Card key={course.id} className="overflow-hidden hover:shadow-xl transition-shadow">
-                  <div className="relative">
+                <Card key={course.id} className="overflow-hidden hover:shadow-xl transition-shadow p-0">
+                  <div className="relative h-48 w-full overflow-hidden bg-gray-100">
                     <img 
                       src={course.image} 
                       alt={course.title}
-                      className="w-full h-48 object-cover"
+                      className="absolute inset-0 w-full h-full object-cover"
+                      style={{ 
+                        objectPosition: 'center center'
+                      }}
                     />
                     <div className="absolute top-4 left-4">
                       <Badge className="bg-white/90 text-gray-800">
