@@ -32,6 +32,13 @@ import NewsPage from './presentation/pages/news';
 import NewsDetailPage from './presentation/pages/news-detail';
 import VolunteerPage from './presentation/pages/volunteer';
 
+// Actividades
+import ActivitiesPage from './presentation/pages/activities';
+import VIIIEnarsuPage from './presentation/pages/activities/viii-enarsu';
+import ActividadesRsuPage from './presentation/pages/activities/actividades-rsu';
+import IniciativasDrsuPage from './presentation/pages/activities/iniciativas-drsu';
+import ProyectosDrsuPage from './presentation/pages/activities/proyectos-drsu';
+
 // Dashboard Admin
 import LoginPage from './presentation/pages/dashboard/login';
 import DashboardLayout from './presentation/pages/dashboard/components/DashboardLayout';
@@ -80,6 +87,13 @@ function App() {
               <Route path="noticias" element={<NewsPage />} />
               <Route path="noticias/:id" element={<NewsDetailPage />} />
               <Route path="voluntariado" element={<VolunteerPage />} />
+              
+              {/* Actividades */}
+              <Route path="actividades" element={<ActivitiesPage />} />
+              <Route path="actividades/viii-enarsu" element={<VIIIEnarsuPage />} />
+              <Route path="actividades/actividades-rsu" element={<ActividadesRsuPage />} />
+              <Route path="actividades/iniciativas-drsu" element={<IniciativasDrsuPage />} />
+              <Route path="actividades/proyectos-drsu" element={<ProyectosDrsuPage />} />
               
               {/* Páginas en desarrollo */}
               <Route path="proyectos" element={<div className="p-8 text-center">Página de Proyectos - En desarrollo</div>} />

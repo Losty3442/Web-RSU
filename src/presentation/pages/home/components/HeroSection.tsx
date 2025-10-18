@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import { AuroraText } from "@/presentation/components/ui/aurora-text";
 
 // Array de imágenes para el carrusel
@@ -38,6 +39,7 @@ const heroImages = [
 
 export const HeroSection: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const navigate = useNavigate();
 
   // Auto-rotación del carrusel cada 6 segundos
   useEffect(() => {
@@ -189,6 +191,7 @@ export const HeroSection: React.FC = () => {
                 transition={{ duration: 1, delay: 1.9, ease: "easeOut" }}
               >
                 <motion.button
+                  onClick={() => navigate('/what-is-rsu')}
                   className="bg-[#00BFFF] hover:bg-[#00BFFF]/90 text-white px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300 shadow-2xl hover:shadow-[#00BFFF]/25 hover:scale-105 border-2 border-[#00BFFF]"
                   style={{ fontFamily: "Alan Sans, sans-serif" }}
                   whileHover={{ scale: 1.05 }}
@@ -200,6 +203,7 @@ export const HeroSection: React.FC = () => {
                   Conoce más sobre nosotros
                 </motion.button>
                 <motion.button
+                  onClick={() => navigate('/noticias')}
                   className="border-2 border-white/40 hover:border-white text-white px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300 hover:bg-white/10 backdrop-blur-sm shadow-xl"
                   style={{ fontFamily: "Alan Sans, sans-serif" }}
                   whileHover={{ scale: 1.05 }}

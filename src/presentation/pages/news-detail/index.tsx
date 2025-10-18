@@ -55,7 +55,7 @@ const NewsDetailPage: React.FC = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-4">
               <Link to="/noticias">
-                <Button variant="ghost" size="sm" className="gap-2">
+                <Button variant="outline" size="sm" className="gap-2 border-gray-300 text-gray-700 hover:bg-gray-50">
                   <ArrowLeft className="w-4 h-4" />
                   Volver
                 </Button>
@@ -69,11 +69,11 @@ const NewsDetailPage: React.FC = () => {
               />
             </div>
             <div className="flex items-center gap-2">
-              <Button variant="ghost" size="sm" className="gap-2">
+              <Button variant="outline" size="sm" className="gap-2 border-gray-300 text-gray-700 hover:bg-gray-50">
                 <Share2 className="w-4 h-4" />
                 Compartir
               </Button>
-              <Button variant="ghost" size="sm" className="gap-2">
+              <Button variant="outline" size="sm" className="gap-2 border-gray-300 text-gray-700 hover:bg-gray-50">
                 <Heart className="w-4 h-4" />
                 Guardar
               </Button>

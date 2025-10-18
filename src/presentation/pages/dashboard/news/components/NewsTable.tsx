@@ -136,12 +136,12 @@ const NewsTable: React.FC<NewsTableProps> = ({ news, isLoading }) => {
                 <TableCell className="text-right">
                   <div className="flex items-center justify-end space-x-2">
                     <Link to={`/admin/news/${item.id}`}>
-                      <Button variant="ghost" size="sm">
+                      <Button variant="outline" size="sm" className="border-gray-300 text-gray-700 hover:bg-gray-50">
                         <Eye className="h-4 w-4" />
                       </Button>
                     </Link>
                     <Link to={`/admin/news/${item.id}/edit`}>
-                      <Button variant="ghost" size="sm">
+                      <Button variant="outline" size="sm" className="border-gray-300 text-gray-700 hover:bg-gray-50">
                         <Edit className="h-4 w-4" />
                       </Button>
                     </Link>

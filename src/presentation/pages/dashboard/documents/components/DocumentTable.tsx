@@ -175,7 +175,7 @@ const DocumentTable: React.FC<DocumentTableProps> = ({ documents, isLoading }) =
                       </Button>
                     )}
                     <Link to={`/admin/documents/${item.id}/edit`}>
-                      <Button variant="ghost" size="sm">
+                      <Button variant="outline" size="sm" className="border-gray-300 text-gray-700 hover:bg-gray-50">
                         <Edit className="h-4 w-4" />
                       </Button>
                     </Link>

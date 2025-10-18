@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/presentation/components/ui/card';
 import { Badge } from '@/presentation/components/ui/badge';
 import { Button } from '@/presentation/components/ui/button';
@@ -74,14 +75,16 @@ const RecognitionPage: React.FC = () => {
               Documentos oficiales y recursos de gestión que respaldan nuestro trabajo en responsabilidad social universitaria
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button className="bg-white text-yellow-600 hover:bg-gray-100">
+              <Button className="bg-white text-yellow-600 hover:bg-gray-100" onClick={() => window.open('/documents/reconocimientos.pdf', '_blank')}>
                 <Download className="h-4 w-4 mr-2" />
                 Descargar Documentos
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10">
-                <FileText className="h-4 w-4 mr-2" />
-                Ver Catálogo
-              </Button>
+              <Link to="/reconocimiento">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-yellow-600 bg-white/10">
+                  <FileText className="h-4 w-4 mr-2" />
+                  Ver Catálogo
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

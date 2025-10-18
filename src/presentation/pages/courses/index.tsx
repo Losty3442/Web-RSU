@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/presentation/components/ui/card';
 import { Badge } from '@/presentation/components/ui/badge';
 import { Button } from '@/presentation/components/ui/button';
@@ -107,14 +108,18 @@ const CoursesPage: React.FC = () => {
               Formación especializada en Responsabilidad Social Universitaria
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button className="bg-white text-blue-600 hover:bg-gray-100">
-                <BookOpen className="h-4 w-4 mr-2" />
-                Ver Catálogo
-              </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10">
-                <Users className="h-4 w-4 mr-2" />
-                Inscripciones
-              </Button>
+              <Link to="/cursos">
+                <Button className="bg-white text-blue-600 hover:bg-gray-100">
+                  <BookOpen className="h-4 w-4 mr-2" />
+                  Ver Catálogo
+                </Button>
+              </Link>
+              <Link to="/contacto">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 bg-white/10">
+                  <Users className="h-4 w-4 mr-2" />
+                  Inscripciones
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -227,7 +232,7 @@ const CoursesPage: React.FC = () => {
                           {course.statusText}
                         </Badge>
                       </div>
-                      <Button size="sm" className="ml-auto">
+                      <Button size="sm" className="ml-auto bg-primary text-white hover:bg-primary/90">
                         {getButtonText(course.status)}
                         <ArrowRight className="h-4 w-4 ml-2" />
                       </Button>

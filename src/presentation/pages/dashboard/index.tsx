@@ -79,7 +79,7 @@ const DashboardHome: React.FC = () => {
             </Button>
           </Link>
           <Link to="/admin/documents">
-            <Button variant="outline" className="w-full sm:w-auto">
+            <Button variant="outline" className="w-full sm:w-auto border-gray-300 text-gray-700 hover:bg-gray-50">
               <Plus className="h-4 w-4 mr-2" />
               Nuevo Documento
             </Button>
@@ -154,7 +154,7 @@ const DashboardHome: React.FC = () => {
                 ))}
                 <div className="pt-2">
                   <Link to="/admin/news">
-                    <Button variant="outline" size="sm" className="w-full">
+                    <Button variant="outline" size="sm" className="w-full border-gray-300 text-gray-700 hover:bg-gray-50">
                       Ver todas las noticias
                       <ArrowRight className="h-4 w-4 ml-2" />
                     </Button>
@@ -236,7 +236,7 @@ const DashboardHome: React.FC = () => {
                 
                 <div className="pt-2">
                   <Link to="/admin/documents">
-                    <Button variant="outline" size="sm" className="w-full">
+                    <Button variant="outline" size="sm" className="w-full border-gray-300 text-gray-700 hover:bg-gray-50">
                       Gestionar documentos
                       <ArrowRight className="h-4 w-4 ml-2" />
                     </Button>
