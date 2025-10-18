@@ -23,19 +23,9 @@ export const RelatedNews: React.FC<RelatedNewsProps> = ({
 
   if (relatedNews.length === 0) return null;
 
-  const getImageForNews = (id: number): string => {
-    const images = [
-      "/images/noticias1.jpg",
-      "/images/noticias2.jpg",
-      "/images/noticias3.jpg",
-      "/images/noticias4.jpg",
-      "/images/noticias5.jpeg",
-      "/images/noticias6.jpg",
-      "/images/Feria_02-scaled.jpeg",
-      "/images/Encuentro_01-scaled.jpeg",
-    ];
-
-    return images[id % images.length];
+  const getImageForNews = (news: any): string => {
+    // Use the actual image from the news data, fallback to a default if not available
+    return news.image || "/images/noticias1.jpg";
   };
 
   return (
@@ -54,7 +44,7 @@ export const RelatedNews: React.FC<RelatedNewsProps> = ({
             <div className="flex gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors">
               <div className="flex-shrink-0">
                 <img
-                  src={getImageForNews(news.id)}
+                  src={getImageForNews(news)}
                   alt={news.title}
                   className="w-16 h-16 object-cover rounded-lg"
                 />

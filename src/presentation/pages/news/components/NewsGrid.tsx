@@ -40,19 +40,9 @@ export const NewsGrid: React.FC<NewsGridProps> = ({
     return dateString;
   };
 
-  const getImageForNews = (id: number): string => {
-    const images = [
-      "/images/noticias1.jpg",
-      "/images/noticias2.jpg",
-      "/images/noticias3.jpg",
-      "/images/noticias4.jpg",
-      "/images/noticias5.jpeg",
-      "/images/noticias6.jpg",
-      "/images/Feria_02-scaled.jpeg",
-      "/images/Encuentro_01-scaled.jpeg",
-    ];
-
-    return images[id % images.length];
+  const getImageForNews = (news: any): string => {
+    // Use the actual image from the news data, fallback to a default if not available
+    return news.image || "/images/noticias1.jpg";
   };
 
   const getCategoryIcon = (category: string) => {
@@ -87,7 +77,7 @@ export const NewsGrid: React.FC<NewsGridProps> = ({
             <div className="relative">
               <AspectRatio ratio="video" className="overflow-hidden rounded-xl">
                 <img
-                  src={getImageForNews(news.id)}
+                  src={getImageForNews(news)}
                   alt={news.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
