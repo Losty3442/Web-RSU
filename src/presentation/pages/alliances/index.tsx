@@ -31,25 +31,11 @@ interface Alliance {
 const alliances: Alliance[] = [
   {
     id: 1,
-    name: "Ministerio de Educación",
-    type: "Institución Gubernamental",
-    description: "Alianza estratégica para el desarrollo de políticas educativas y programas de responsabilidad social universitaria a nivel nacional.",
-    logo: "https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=ministry%20education%20peru%20government%20logo%20official&image_size=square",
-    website: "https://www.gob.pe/minedu",
-    contact: {
-      address: "Calle Del Comercio 193, San Borja, Lima",
-      phone: "(01) 615-5800",
-      email: "webmaster@minedu.gob.pe"
-    },
-    projects: ["Programa de Universidades Saludables", "Fortalecimiento de la RSU", "Capacitación Docente"],
-    status: "active"
-  },
-  {
-    id: 2,
     name: "Gobierno Regional de Piura",
     type: "Gobierno Regional",
-    description: "Colaboración en proyectos de desarrollo regional y programas de impacto social en la región Piura.",
-    logo: "https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=regional%20government%20piura%20peru%20coat%20arms&image_size=square",
+    description: "Colaboración en proyectos de desarrollo regional y políticas públicas.",
+    logo: "/images/logo-gobierno-regional.png",
+    website: "#",
     contact: {
       address: "Av. San Ramón s/n, Piura",
       phone: "(073) 284-600",
@@ -59,11 +45,12 @@ const alliances: Alliance[] = [
     status: "active"
   },
   {
-    id: 3,
+    id: 2,
     name: "Municipalidad Provincial de Piura",
     type: "Gobierno Local",
-    description: "Trabajo conjunto en iniciativas de desarrollo urbano sostenible y programas sociales para la comunidad piurana.",
-    logo: "https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=municipality%20piura%20city%20hall%20local%20government&image_size=square",
+    description: "Trabajo conjunto en iniciativas de desarrollo urbano sostenible.",
+    logo: "/images/logo-municipalidad.png",
+    website: "#",
     contact: {
       address: "Jr. Ayacucho 377, Piura",
       phone: "(073) 320-021",
@@ -73,25 +60,24 @@ const alliances: Alliance[] = [
     status: "active"
   },
   {
-    id: 4,
-    name: "ESSALUD Piura",
-    type: "Institución de Salud",
-    description: "Alianza para el desarrollo de programas de salud preventiva y promoción del bienestar universitario.",
-    logo: "https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=essalud%20peru%20health%20institution%20medical%20logo&image_size=square",
-    website: "https://www.essalud.gob.pe",
+    id: 3,
+    name: "ONG Desarrollo Sostenible",
+    type: "Organización Civil",
+    description: "Alianza estratégica para proyectos ambientales y sociales.",
+    logo: "/images/logo-ong.png",
+    website: "#",
     contact: {
-      phone: "(073) 343-141",
-      email: "piura@essalud.gob.pe"
+      email: "info@ongdesarrollosostenible.org"
     },
-    projects: ["Universidad Saludable", "Campañas de Prevención", "Atención Médica Estudiantil"],
+    projects: ["Derechos Humanos", "Justicia Social", "Desarrollo Comunitario"],
     status: "active"
   },
   {
-    id: 5,
+    id: 4,
     name: "Cámara de Comercio de Piura",
     type: "Sector Privado",
-    description: "Colaboración en programas de emprendimiento, prácticas profesionales y vinculación universidad-empresa.",
-    logo: "https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=chamber%20commerce%20piura%20business%20organization&image_size=square",
+    description: "Vinculación universidad-empresa para el desarrollo económico.",
+    logo: "/images/logo-camara-comercio.png",
     website: "https://www.camarapiura.org.pe",
     contact: {
       address: "Jr. Junín 840, Piura",
@@ -102,16 +88,32 @@ const alliances: Alliance[] = [
     status: "active"
   },
   {
-    id: 6,
-    name: "ONG Paz y Esperanza",
-    type: "Organización Civil",
-    description: "Trabajo conjunto en programas de derechos humanos, justicia social y desarrollo comunitario.",
-    logo: "https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=ngo%20peace%20hope%20social%20organization%20logo&image_size=square",
-    website: "https://www.pazyesperanza.org",
+    id: 5,
+    name: "MINSA - Dirección Regional",
+    type: "Institución de Salud",
+    description: "Colaboración en programas de salud pública y prevención.",
+    logo: "/images/logo-minsa.png",
+    website: "#",
     contact: {
-      email: "info@pazyesperanza.org"
+      phone: "(073) 343-141",
+      email: "piura@minsa.gob.pe"
     },
-    projects: ["Derechos Humanos", "Justicia Social", "Desarrollo Comunitario"],
+    projects: ["Universidad Saludable", "Campañas de Prevención", "Atención Médica Estudiantil"],
+    status: "active"
+  },
+  {
+    id: 6,
+    name: "MINEDU - UGEL Piura",
+    type: "Institución Gubernamental",
+    description: "Apoyo en programas educativos y capacitación docente.",
+    logo: "/images/logo-minedu.png",
+    website: "#",
+    contact: {
+      address: "Calle Del Comercio 193, San Borja, Lima",
+      phone: "(01) 615-5800",
+      email: "webmaster@minedu.gob.pe"
+    },
+    projects: ["Programa de Universidades Saludables", "Fortalecimiento de la RSU", "Capacitación Docente"],
     status: "active"
   }
 ];
@@ -152,15 +154,10 @@ export default function AlliancesPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16">
+      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-24">
         <div className="container mx-auto px-4 text-center">
-          <div className="flex justify-center mb-6">
-            <div className="bg-white bg-opacity-20 p-4 rounded-full">
-              <Handshake className="w-12 h-12" />
-            </div>
-          </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Alianzas Estratégicas
           </h1>
@@ -181,19 +178,14 @@ export default function AlliancesPage() {
               Nuestras alianzas estratégicas son fundamentales para amplificar el impacto de nuestros programas 
               de responsabilidad social universitaria. Trabajamos de la mano con instituciones gubernamentales, 
               organizaciones civiles, empresas privadas y organismos internacionales para crear un ecosistema 
-              de colaboración que beneficie a toda la comunidad.
+              de colaboración efectivo.
             </p>
           </div>
-        </div>
-      </section>
 
-      {/* Alliances Grid */}
-      <section className="pb-16">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {alliances.map((alliance) => (
-              <Card key={alliance.id} className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <CardHeader className="pb-4">
+              <Card key={alliance.id} className="group hover:shadow-lg transition-shadow duration-200">
+                <CardHeader>
                   <div className="flex items-center justify-between mb-4">
                     <img
                       src={alliance.logo}
@@ -287,6 +279,7 @@ export default function AlliancesPage() {
         </div>
       </section>
 
+      {/* Statistics Section */}
       {/* Statistics Section */}
       <section className="bg-white py-16">
         <div className="container mx-auto px-4">

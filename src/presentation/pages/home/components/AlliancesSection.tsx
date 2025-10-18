@@ -4,6 +4,7 @@ import { ExternalLink } from 'lucide-react';
 import { Card, CardContent } from '../../../components/ui/card';
 import { Carousel } from '../../../components/common/Carousel';
 import { useScrollAnimation } from '../../../hooks/useScrollAnimation';
+import { Link } from 'react-router-dom';
 
 const ALLIANCES = [
   {
@@ -89,11 +90,13 @@ export const AlliancesSection: React.FC = () => {
             {ALLIANCES.map((alliance) => (
               <Card key={alliance.id} className="h-full shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer">
                 <CardContent className="p-6 text-center">
-                  {/* Logo Placeholder */}
+                  {/* Logo */}
                   <div className="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-gray-50 transition-colors duration-200">
-                    <div className="w-16 h-16 bg-gray-200 rounded flex items-center justify-center">
-                      <span className="text-xs text-gray-500 font-medium">LOGO</span>
-                    </div>
+                    <img
+                      src={alliance.logo}
+                      alt={`Logo de ${alliance.name}`}
+                      className="w-16 h-16 object-contain rounded"
+                    />
                   </div>
 
                   {/* Alliance Name */}
@@ -107,10 +110,13 @@ export const AlliancesSection: React.FC = () => {
                   </p>
 
                   {/* Link */}
-                  <div className="flex items-center justify-center text-primary font-semibold text-sm group-hover:text-primary/80 transition-colors duration-200">
+                  <Link
+                    to="/alianzas"
+                    className="flex items-center justify-center text-primary font-semibold text-sm group-hover:text-primary/80 transition-colors duration-200"
+                  >
                     <span className="mr-2">Conocer más</span>
                     <ExternalLink className="h-4 w-4" />
-                  </div>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
