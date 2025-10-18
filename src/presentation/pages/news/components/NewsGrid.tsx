@@ -1,5 +1,5 @@
 import React from "react";
-import { Calendar, Heart, Star } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Card } from "@/presentation/components/ui/card";
 import { Badge } from "@/presentation/components/ui/badge";
@@ -102,16 +102,6 @@ export const NewsGrid: React.FC<NewsGridProps> = ({
                 </Badge>
               </div>
 
-              {/* Botón de favorito */}
-              <button
-                className="absolute top-3 right-3 p-2 rounded-full bg-white/90 backdrop-blur-sm hover:bg-white transition-colors shadow-sm"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                }}
-              >
-                <Heart className="w-4 h-4 text-gray-600 hover:text-red-500 transition-colors" />
-              </button>
             </div>
 
             {/* Contenido */}
@@ -127,14 +117,10 @@ export const NewsGrid: React.FC<NewsGridProps> = ({
               </p>
 
               {/* Metadatos */}
-              <div className="flex items-center justify-between text-xs text-gray-500">
+              <div className="flex items-center text-xs text-gray-500">
                 <div className="flex items-center gap-1">
                   <Calendar className="w-3 h-3" />
                   <span>{formatDate(news.date)}</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <Star className="w-3 h-3 fill-yellow-400 text-yellow-400" />
-                  <span>4.8</span>
                 </div>
               </div>
 
