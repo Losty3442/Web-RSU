@@ -31,6 +31,7 @@ import ContactPage from './presentation/pages/contact';
 import NewsPage from './presentation/pages/news';
 import NewsDetailPage from './presentation/pages/news-detail';
 import VolunteerPage from './presentation/pages/volunteer';
+import CreditsPage from './presentation/pages/credits';
 
 // Actividades
 import ActivitiesPage from './presentation/pages/activities';
@@ -87,6 +88,7 @@ function App() {
               <Route path="noticias" element={<NewsPage />} />
               <Route path="noticias/:id" element={<NewsDetailPage />} />
               <Route path="voluntariado" element={<VolunteerPage />} />
+              <Route path="creditos" element={<CreditsPage />} />
               
               {/* Actividades */}
               <Route path="actividades" element={<ActivitiesPage />} />

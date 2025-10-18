@@ -73,6 +73,12 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     label: 'Contacto',
     href: '/contacto',
     icon: 'Mail'
+  },
+  {
+    id: 'creditos',
+    label: 'Créditos',
+    href: '/creditos',
+    icon: 'Award'
   }
 ];
 
@@ -85,7 +91,8 @@ export const SIDEBAR_ICONS = [
   { id: 'actividades', icon: 'Calendar', href: '/actividades', tooltip: 'Actividades' },
   { id: 'voluntariado', icon: 'Heart', href: '/voluntariado', tooltip: 'Voluntariado' },
   { id: 'newspaper', icon: 'Newspaper', href: '/noticias', tooltip: 'Noticias' },
-  { id: 'contacto', icon: 'Mail', href: '/contacto', tooltip: 'Contacto' }
+  { id: 'contacto', icon: 'Mail', href: '/contacto', tooltip: 'Contacto' },
+  { id: 'creditos', icon: 'Award', href: '/creditos', tooltip: 'Créditos' }
 ];
 
 // Características principales (¿Qué hacemos?)
