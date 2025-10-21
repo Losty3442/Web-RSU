@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import { Sidebar } from "./Sidebar";
 import { Header } from "./Header";
+import ScrollToTop from "./ScrollToTop";
 import { MenuOverlay } from "./MenuOverlay";
 import { useNavigation } from "../../hooks/useNavigation";
 import { useScrollToTop } from "../../hooks/useScrollToTop";
@@ -28,6 +29,7 @@ export const Layout: React.FC = () => {
         )}
       >
         {/* Header */}
+        <ScrollToTop />
         <Header onMenuToggle={toggleMenu} />
 
         {/* Page content */}
