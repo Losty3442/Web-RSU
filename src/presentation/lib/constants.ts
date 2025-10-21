@@ -73,17 +73,26 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     label: 'Contacto',
     href: '/contacto',
     icon: 'Mail'
+  },
+  {
+    id: 'creditos',
+    label: 'Créditos',
+    href: '/creditos',
+    icon: 'Award'
   }
 ];
 
 // Iconos del sidebar
 export const SIDEBAR_ICONS = [
   { id: 'home', icon: 'Home', href: '/', tooltip: 'Inicio' },
-  { id: 'users', icon: 'Users', href: '/nosotros', tooltip: 'Nosotros' },
-  { id: 'folder', icon: 'FolderOpen', href: '/documentos-gestion', tooltip: 'Documentos' },
+  { id: 'nosotros', icon: 'Users', href: '/what-is-rsu', tooltip: 'Nosotros' },
+  { id: 'documentos', icon: 'FolderOpen', href: '/reconocimiento', tooltip: 'Documentos de Gestión' },
   { id: 'herramientas', icon: 'Wrench', href: '/cursos', tooltip: 'Herramientas' },
+  { id: 'actividades', icon: 'Calendar', href: '/actividades', tooltip: 'Actividades' },
+  { id: 'voluntariado', icon: 'Heart', href: '/voluntariado', tooltip: 'Voluntariado' },
   { id: 'newspaper', icon: 'Newspaper', href: '/noticias', tooltip: 'Noticias' },
-  { id: 'contacto', icon: 'Mail', href: '/contacto', tooltip: 'Contacto' }
+  { id: 'contacto', icon: 'Mail', href: '/contacto', tooltip: 'Contacto' },
+  { id: 'creditos', icon: 'Award', href: '/creditos', tooltip: 'Créditos' }
 ];
 
 // Características principales (¿Qué hacemos?)

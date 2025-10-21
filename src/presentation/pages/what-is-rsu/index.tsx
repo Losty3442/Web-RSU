@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/presentation/components/ui/card';
-import { Button } from '@/presentation/components/ui/button';
-import { HelpCircle, Building, GraduationCap, Search, Users, ArrowRight } from 'lucide-react';
+import { HelpCircle, Building, GraduationCap, Search, Users, Target, Eye, MapPin, UserCheck} from 'lucide-react';
 
 interface ImpactQuadrant {
   title: string;
@@ -10,12 +10,12 @@ interface ImpactQuadrant {
   color: string;
 }
 
-interface NewsItem {
-  id: number;
-  title: string;
-  date: { day: string; month: string };
-  image: string;
-}
+// interface NewsItem {
+//   id: number;
+//   title: string;
+//   date: { day: string; month: string };
+//   image: string;
+// }
 
 const WhatIsRsuPage: React.FC = () => {
   const impactQuadrants: ImpactQuadrant[] = [
@@ -45,44 +45,44 @@ const WhatIsRsuPage: React.FC = () => {
     }
   ];
 
-  const newsItems: NewsItem[] = [
-    {
-      id: 1,
-      title: "DRSU-UNP e INDECI organizan Seminario \"Gestión reactiva del riesgo de desastres\"",
-      date: { day: "04", month: "OCT" },
-      image: "/images/noticias1.jpg"
-    },
-    {
-      id: 2,
-      title: "DRSU y Gore unirán esfuerzos por el agua potable en zonas rurales",
-      date: { day: "04", month: "OCT" },
-      image: "/images/noticias2.jpg"
-    },
-    {
-      id: 3,
-      title: "DRSU UNP camina contra la Trata de Personas",
-      date: { day: "26", month: "SEP" },
-      image: "/images/noticias3.jpg"
-    },
-    {
-      id: 4,
-      title: "¡Formación integral para voluntarios: ¡lenguaje de señas, seguridad y más!",
-      date: { day: "25", month: "SEP" },
-      image: "/images/noticias4.jpg"
-    },
-    {
-      id: 5,
-      title: "Ciclo de Conferencias RSU: Proyectos que transforman la sociedad",
-      date: { day: "25", month: "SEP" },
-      image: "/images/noticias5.jpeg"
-    },
-    {
-      id: 6,
-      title: "¡Proyectos, alegría y compromiso en la Feria RSU!",
-      date: { day: "25", month: "SEP" },
-      image: "/images/noticias6.jpg"
-    }
-  ];
+  // const newsItems: NewsItem[] = [
+  //   {
+  //     id: 1,
+  //     title: "DRSU-UNP e INDECI organizan Seminario \"Gestión reactiva del riesgo de desastres\"",
+  //     date: { day: "04", month: "OCT" },
+  //     image: "/images/noticias1.jpg"
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "DRSU y Gore unirán esfuerzos por el agua potable en zonas rurales",
+  //     date: { day: "04", month: "OCT" },
+  //     image: "/images/noticias2.jpg"
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "DRSU UNP camina contra la Trata de Personas",
+  //     date: { day: "26", month: "SEP" },
+  //     image: "/images/noticias3.jpg"
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "¡Formación integral para voluntarios: ¡lenguaje de señas, seguridad y más!",
+  //     date: { day: "25", month: "SEP" },
+  //     image: "/images/noticias4.jpg"
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "Ciclo de Conferencias RSU: Proyectos que transforman la sociedad",
+  //     date: { day: "25", month: "SEP" },
+  //     image: "/images/noticias5.jpeg"
+  //   },
+  //   {
+  //     id: 6,
+  //     title: "¡Proyectos, alegría y compromiso en la Feria RSU!",
+  //     date: { day: "25", month: "SEP" },
+  //     image: "/images/noticias6.jpg"
+  //   }
+  // ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
@@ -181,6 +181,85 @@ const WhatIsRsuPage: React.FC = () => {
                 Fuente: Ph.D. Francois Vallaeys
               </p>
             </div>
+          </div>
+        </div>
+
+        {/* Quick Navigation Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Conoce más sobre nosotros
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto mb-4"></div>
+            <p className="text-gray-600 text-lg">
+              Explora nuestra misión, visión y más información sobre la DRSU
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Link to="/mission" className="group">
+              <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+                <CardContent className="p-6 text-center">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full mb-4 text-white">
+                    <Target className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                    Misión
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Nuestro propósito y compromiso con la sociedad
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/vision" className="group">
+              <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+                <CardContent className="p-6 text-center">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full mb-4 text-white">
+                    <Eye className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                    Visión
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Nuestra aspiración y futuro deseado
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/location" className="group">
+              <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+                <CardContent className="p-6 text-center">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full mb-4 text-white">
+                    <MapPin className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                    Ubicación
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Dónde encontrarnos y cómo llegar
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/team" className="group">
+              <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+                <CardContent className="p-6 text-center">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full mb-4 text-white">
+                    <UserCheck className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                    Equipo DRSU
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Conoce a nuestro equipo de trabajo
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
         </div>
 

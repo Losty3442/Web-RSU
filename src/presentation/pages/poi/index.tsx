@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/presentation/components/ui/card';
 import { Badge } from '@/presentation/components/ui/badge';
 import { Button } from '@/presentation/components/ui/button';
@@ -83,14 +84,16 @@ const PoiPage: React.FC = () => {
               Plan Operativo Institucional de Responsabilidad Social Universitaria
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button className="bg-white text-blue-600 hover:bg-gray-100">
+              <Button className="bg-white text-blue-600 hover:bg-gray-100" onClick={() => window.open('/documents/poi-2024.pdf', '_blank')}>
                 <Download className="h-4 w-4 mr-2" />
                 Descargar POI 2024
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10">
-                <Calendar className="h-4 w-4 mr-2" />
-                Ver Cronograma
-              </Button>
+              <Link to="/poi">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 bg-white/10">
+                  <Calendar className="h-4 w-4 mr-2" />
+                  Ver Cronograma
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -200,15 +203,17 @@ const PoiPage: React.FC = () => {
                   <CardTitle>Acciones Rápidas</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  <Button className="w-full justify-start" variant="outline">
+                  <Button className="w-full justify-start" variant="outline" style={{borderColor: '#d1d5db', color: '#374151'}} onClick={() => window.open('/documents/poi-completo.pdf', '_blank')}>
                     <Download className="h-4 w-4 mr-2" />
                     Descargar POI Completo
                   </Button>
-                  <Button className="w-full justify-start" variant="outline">
-                    <Calendar className="h-4 w-4 mr-2" />
-                    Ver Cronograma Detallado
-                  </Button>
-                  <Button className="w-full justify-start" variant="outline">
+                  <Link to="/poi">
+                    <Button className="w-full justify-start" variant="outline" style={{borderColor: '#d1d5db', color: '#374151'}}>
+                      <Calendar className="h-4 w-4 mr-2" />
+                      Ver Cronograma Detallado
+                    </Button>
+                  </Link>
+                  <Button className="w-full justify-start" variant="outline" style={{borderColor: '#d1d5db', color: '#374151'}} onClick={() => window.open('/documents/reporte-avance.pdf', '_blank')}>
                     <TrendingUp className="h-4 w-4 mr-2" />
                     Reporte de Avance
                   </Button>

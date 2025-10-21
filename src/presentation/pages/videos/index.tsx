@@ -220,12 +220,15 @@ export default function VideosPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {videos.map((video) => (
-              <Card key={video.id} className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
-                <div className="relative aspect-video overflow-hidden rounded-t-lg">
+              <Card key={video.id} className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer p-0">
+                <div className="relative h-48 w-full overflow-hidden bg-gray-100">
                   <img
                     src={video.thumbnail}
                     alt={video.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    style={{ 
+                      objectPosition: 'center center'
+                    }}
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
                     <Button

@@ -19,7 +19,7 @@ import { Button } from '../../components/ui/button';
 import { Input } from '../../components/ui/input';
 import { Label } from '../../components/ui/label';
 import { Textarea } from '../../components/ui/textarea';
-import { useScrollAnimation } from '../../hooks/useScrollAnimation';
+import { useScrollAnimations } from '../../hooks/useScrollAnimation';
 
 const VOLUNTEER_TYPES = [
   {
@@ -96,7 +96,7 @@ const REQUIREMENTS = [
 ];
 
 const VolunteerPage: React.FC = () => {
-  const { isVisible, ref } = useScrollAnimation();
+  const { observeElement, isVisible } = useScrollAnimations();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -160,12 +160,12 @@ const VolunteerPage: React.FC = () => {
       </section>
 
       {/* Tipos de Voluntariado */}
-      <section ref={ref} className="py-16">
+      <section ref={(el) => observeElement('volunteer-types', el)} className="py-16">
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center mb-12"
             initial={{ opacity: 0, y: 30 }}
-            animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            animate={isVisible('volunteer-types') ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -183,7 +183,7 @@ const VolunteerPage: React.FC = () => {
                 <motion.div
                   key={type.id}
                   initial={{ opacity: 0, y: 30 }}
-                  animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                  animate={isVisible('volunteer-types') ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
                   <Card className="h-full hover:shadow-lg transition-shadow duration-300">
@@ -225,12 +225,12 @@ const VolunteerPage: React.FC = () => {
       </section>
 
       {/* Beneficios */}
-      <section className="py-16 bg-white">
+      <section ref={(el) => observeElement('benefits', el)} className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center mb-12"
             initial={{ opacity: 0, y: 30 }}
-            animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            animate={isVisible('benefits') ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -247,20 +247,23 @@ const VolunteerPage: React.FC = () => {
               return (
                 <motion.div
                   key={index}
-                  className="text-center"
                   initial={{ opacity: 0, y: 30 }}
-                  animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                  animate={isVisible('benefits') ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
-                  <div className="mx-auto mb-4 p-4 rounded-full bg-primary/10">
-                    <Icon className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-gray-600">
-                    {benefit.description}
-                  </p>
+                  <Card className="h-full text-center hover:shadow-lg transition-shadow duration-300 border-2 border-gray-100 hover:border-primary/20">
+                    <CardContent className="p-6">
+                      <div className="flex justify-center mb-4">
+                        <Icon className="w-8 h-8 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-3">
+                        {benefit.title}
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed">
+                        {benefit.description}
+                      </p>
+                    </CardContent>
+                  </Card>
                 </motion.div>
               );
             })}
@@ -268,14 +271,56 @@ const VolunteerPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Conoce a nuestros voluntarios */}
+      <section ref={(el) => observeElement('volunteers', el)} className="py-16 bg-gradient-to-r from-primary/5 to-secondary/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={isVisible('volunteers') ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Conoce a nuestros voluntarios
+              </h2>
+              <p className="text-lg text-gray-600 mb-8">
+                Descubre las historias y experiencias de nuestros voluntarios activos
+              </p>
+              
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={isVisible('volunteers') ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
+                <Button 
+                  asChild
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg font-semibold"
+                >
+                  <a 
+                    href="https://docs.google.com/spreadsheets/d/1S9FVuHq0L3x6S1goV-NHNPPm_We23-zw/edit?usp=sharing&ouid=112396737884500674676&rtpof=true&sd=true"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2"
+                  >
+                    <Users className="w-5 h-5" />
+                    Ver Directorio de Voluntarios
+                  </a>
+                </Button>
+              </motion.div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Requisitos */}
-      <section className="py-16 bg-gray-50">
+      <section ref={(el) => observeElement('requirements', el)} className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <motion.div
               className="text-center mb-12"
               initial={{ opacity: 0, y: 30 }}
-              animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              animate={isVisible('requirements') ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -294,7 +339,7 @@ const VolunteerPage: React.FC = () => {
                       key={index}
                       className="flex items-start"
                       initial={{ opacity: 0, x: -20 }}
-                      animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                      animate={isVisible('requirements') ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                       transition={{ duration: 0.6, delay: index * 0.1 }}
                     >
                       <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
@@ -309,13 +354,13 @@ const VolunteerPage: React.FC = () => {
       </section>
 
       {/* Formulario de Inscripción */}
-      <section className="py-16 bg-white">
+      <section ref={(el) => observeElement('form', el)} className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <motion.div
               className="text-center mb-12"
               initial={{ opacity: 0, y: 30 }}
-              animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              animate={isVisible('form') ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">

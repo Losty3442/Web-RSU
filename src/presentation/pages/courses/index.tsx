@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/presentation/components/ui/card';
 import { Badge } from '@/presentation/components/ui/badge';
 import { Button } from '@/presentation/components/ui/button';
@@ -107,14 +108,18 @@ const CoursesPage: React.FC = () => {
               Formación especializada en Responsabilidad Social Universitaria
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button className="bg-white text-blue-600 hover:bg-gray-100">
-                <BookOpen className="h-4 w-4 mr-2" />
-                Ver Catálogo
-              </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10">
-                <Users className="h-4 w-4 mr-2" />
-                Inscripciones
-              </Button>
+              <Link to="/cursos">
+                <Button className="bg-white text-blue-600 hover:bg-gray-100">
+                  <BookOpen className="h-4 w-4 mr-2" />
+                  Ver Catálogo
+                </Button>
+              </Link>
+              <Link to="/contacto">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 bg-white/10">
+                  <Users className="h-4 w-4 mr-2" />
+                  Inscripciones
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -147,12 +152,15 @@ const CoursesPage: React.FC = () => {
             {courses.map((course) => {
               const StatusIcon = getStatusIcon(course.status);
               return (
-                <Card key={course.id} className="overflow-hidden hover:shadow-xl transition-shadow">
-                  <div className="relative">
+                <Card key={course.id} className="overflow-hidden hover:shadow-xl transition-shadow p-0">
+                  <div className="relative h-48 w-full overflow-hidden bg-gray-100">
                     <img 
                       src={course.image} 
                       alt={course.title}
-                      className="w-full h-48 object-cover"
+                      className="absolute inset-0 w-full h-full object-cover"
+                      style={{ 
+                        objectPosition: 'center center'
+                      }}
                     />
                     <div className="absolute top-4 left-4">
                       <Badge className="bg-white/90 text-gray-800">
@@ -224,7 +232,7 @@ const CoursesPage: React.FC = () => {
                           {course.statusText}
                         </Badge>
                       </div>
-                      <Button size="sm" className="ml-auto">
+                      <Button size="sm" className="ml-auto bg-primary text-white hover:bg-primary/90">
                         {getButtonText(course.status)}
                         <ArrowRight className="h-4 w-4 ml-2" />
                       </Button>

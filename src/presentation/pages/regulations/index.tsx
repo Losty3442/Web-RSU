@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/presentation/components/ui/card';
 import { Badge } from '@/presentation/components/ui/badge';
 import { Button } from '@/presentation/components/ui/button';
@@ -122,14 +123,16 @@ const RegulationsPage: React.FC = () => {
               Marco normativo que regula las actividades de responsabilidad social universitaria
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button className="bg-white text-blue-600 hover:bg-gray-100">
+              <Button className="bg-white text-blue-600 hover:bg-gray-100" onClick={() => window.open('/documents/reglamento-rsu.pdf', '_blank')}>
                 <Download className="h-4 w-4 mr-2" />
                 Descargar Reglamento
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10">
-                <FileText className="h-4 w-4 mr-2" />
-                Ver Índice
-              </Button>
+              <Link to="/reglamento">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 bg-white/10">
+                  <FileText className="h-4 w-4 mr-2" />
+                  Ver Índice
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

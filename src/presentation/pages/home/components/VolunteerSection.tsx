@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import { GraduationCap, Leaf, Heart, Stethoscope } from 'lucide-react';
 import { Card, CardContent } from '../../../components/ui/card';
 import { Badge } from '../../../components/ui/badge';
@@ -42,6 +43,7 @@ const VOLUNTEER_TYPES = [
 
 export const VolunteerSection: React.FC = () => {
   const { isVisible, ref } = useScrollAnimation();
+  const navigate = useNavigate();
 
   return (
     <section ref={ref} className="py-16 bg-white">
@@ -110,7 +112,10 @@ export const VolunteerSection: React.FC = () => {
               Inscríbete en nuestros programas de voluntariado y contribuye al desarrollo 
               sostenible de nuestra región mientras enriqueces tu formación profesional.
             </p>
-            <button className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl">
+            <button 
+              onClick={() => navigate('/voluntariado')}
+              className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl"
+            >
               Únete como voluntario
             </button>
           </div>

@@ -4,10 +4,14 @@ import { Sidebar } from "./Sidebar";
 import { Header } from "./Header";
 import { MenuOverlay } from "./MenuOverlay";
 import { useNavigation } from "../../hooks/useNavigation";
+import { useScrollToTop } from "../../hooks/useScrollToTop";
 import { cn } from "../../lib/utils";
 
 export const Layout: React.FC = () => {
   const { isMenuOpen, toggleMenu, closeMenu } = useNavigation();
+  
+  // Scroll to top on route change
+  useScrollToTop();
 
   return (
     <div className="min-h-screen bg-background">

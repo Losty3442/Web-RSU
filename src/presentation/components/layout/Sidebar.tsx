@@ -9,35 +9,25 @@ import {
   Wrench,
   Mail,
   Heart,
+  Calendar,
+  Award,
 } from "lucide-react";
 import { cn } from "../../lib/utils";
 import { useSidebar } from "../../hooks/useSidebar";
 import { useNavigation } from "../../hooks/useNavigation";
+import { SIDEBAR_ICONS } from "../../lib/constants";
 
-const SIDEBAR_ICONS = [
-  { id: "home", icon: Home, href: "/", tooltip: "Inicio" },
-  { id: "users", icon: Users, href: "/what-is-rsu", tooltip: "Nosotros" },
-  {
-    id: "folder",
-    icon: FolderOpen,
-    href: "/reconocimiento",
-    tooltip: "Documentos",
-  },
-  {
-    id: "herramientas",
-    icon: Wrench,
-    href: "/cursos",
-    tooltip: "Herramientas",
-  },
-  {
-    id: "voluntariado",
-    icon: Heart,
-    href: "/voluntariado",
-    tooltip: "Voluntariado",
-  },
-  { id: "newspaper", icon: Newspaper, href: "/noticias", tooltip: "Noticias" },
-  { id: "contacto", icon: Mail, href: "/contacto", tooltip: "Contacto" },
-];
+const ICON_MAP = {
+  Home,
+  Users,
+  FolderOpen,
+  Newspaper,
+  Wrench,
+  Mail,
+  Heart,
+  Calendar,
+  Award,
+};
 
 export const Sidebar: React.FC = () => {
   const { handleMouseEnter, handleMouseLeave } = useSidebar();
@@ -65,7 +55,7 @@ export const Sidebar: React.FC = () => {
         {/* Navigation Icons */}
         <nav className="flex flex-col space-y-4">
           {SIDEBAR_ICONS.map((item) => {
-            const Icon = item.icon;
+            const Icon = ICON_MAP[item.icon as keyof typeof ICON_MAP];
             const isActive = isActiveRoute(item.href);
 
             return (

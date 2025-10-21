@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card } from '@/presentation/components/ui/card';
 import { Badge } from '@/presentation/components/ui/badge';
 import { Button } from '@/presentation/components/ui/button';
@@ -172,13 +173,17 @@ const VisionPage: React.FC = () => {
             Sé parte de la transformación hacia una universidad más saludable, solidaria y sostenible
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="secondary" className="flex items-center gap-2">
-              Conoce Nuestros Proyectos
-              <ArrowRight className="w-4 h-4" />
-            </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-purple-600">
-              Contáctanos
-            </Button>
+            <Link to="/noticias">
+              <Button variant="secondary" className="flex items-center gap-2 bg-gray-200 text-gray-800 hover:bg-gray-300">
+                Conoce Nuestros Proyectos
+                <ArrowRight className="w-4 h-4" />
+              </Button>
+            </Link>
+            <Link to="/contacto">
+              <Button variant="outline" className="border-white text-white bg-white/10 hover:bg-white hover:text-purple-600">
+                Contáctanos
+              </Button>
+            </Link>
           </div>
         </Card>
       </div>

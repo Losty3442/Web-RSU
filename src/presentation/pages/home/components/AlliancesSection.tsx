@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import { Card, CardContent } from '../../../components/ui/card';
+import { Carousel } from '../../../components/common/Carousel';
 import { useScrollAnimation } from '../../../hooks/useScrollAnimation';
 
 const ALLIANCES = [
@@ -71,17 +72,22 @@ export const AlliancesSection: React.FC = () => {
           </p>
         </motion.div>
 
-        {/* Alliances Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {ALLIANCES.map((alliance, index) => (
-            <motion.div
-              key={alliance.id}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              whileHover={{ y: -5 }}
-            >
-              <Card className="h-full shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer">
+        {/* Alliances Carousel */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.6 }}
+        >
+          <Carousel
+            itemsPerView={{ mobile: 1, tablet: 2, desktop: 3 }}
+            autoPlay={true}
+            autoPlayInterval={4000}
+            showDots={true}
+            showArrows={true}
+            className="px-8"
+          >
+            {ALLIANCES.map((alliance) => (
+              <Card key={alliance.id} className="h-full shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer">
                 <CardContent className="p-6 text-center">
                   {/* Logo Placeholder */}
                   <div className="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-gray-50 transition-colors duration-200">
@@ -107,9 +113,9 @@ export const AlliancesSection: React.FC = () => {
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
-          ))}
-        </div>
+            ))}
+          </Carousel>
+        </motion.div>
 
         {/* Additional Info */}
         <motion.div

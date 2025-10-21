@@ -145,7 +145,7 @@ export const ContactForm: React.FC = () => {
           <p className="text-sm text-gray-500 text-center flex items-center justify-center gap-2">
             <Shield className="w-4 h-4" />
             Protegemos tu{' '}
-            <a href="#" className="text-blue-600 hover:underline">
+            <a href="/privacy-policy" className="text-blue-600 hover:underline">
               Privacidad
             </a>
           </p>

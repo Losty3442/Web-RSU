@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from "@/presentation/components/ui/card";
 import { Button } from "@/presentation/components/ui/button";
 import { Badge } from "@/presentation/components/ui/badge";
@@ -345,10 +346,12 @@ export default function AlliancesPage() {
             Si tu organización comparte nuestros valores y objetivos de responsabilidad social, 
             nos encantaría explorar oportunidades de colaboración.
           </p>
-          <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
-            <Mail className="w-5 h-5 mr-2" />
-            Proponer Alianza
-          </Button>
+          <Link to="/contacto">
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
+              <Mail className="w-5 h-5 mr-2" />
+              Proponer Alianza
+            </Button>
+          </Link>
         </div>
       </section>
     </div>
