@@ -8,7 +8,6 @@ import {
   AvatarFallback,
   AvatarImage,
 } from "@/presentation/components/ui/avatar";
-import { AspectRatio } from "@/presentation/components/ui/aspect-ratio";
 import { getNewsByCategory, newsCategories } from "@/data/newsData";
 
 interface NewsGridProps {

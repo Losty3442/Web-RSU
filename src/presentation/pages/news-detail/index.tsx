@@ -12,7 +12,6 @@ import {
   AvatarFallback,
   AvatarImage,
 } from "@/presentation/components/ui/avatar";
-import { AspectRatio } from "@/presentation/components/ui/aspect-ratio";
 import { Button } from "@/presentation/components/ui/button";
 import { Breadcrumb } from "@/presentation/components/common/Breadcrumb";
 import { RelatedNews } from "./components/RelatedNews";

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/presentation/components/ui/card';
-import { HelpCircle, Building, GraduationCap, Search, Users, Target, Eye, MapPin, UserCheck, Handshake } from 'lucide-react';
+import { HelpCircle, Building, GraduationCap, Search, Users, Target, Eye, MapPin, UserCheck} from 'lucide-react';
 
 interface ImpactQuadrant {
   title: string;
