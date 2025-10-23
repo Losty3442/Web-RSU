@@ -10,12 +10,6 @@ interface ImpactQuadrant {
   color: string;
 }
 
-// interface NewsItem {
-//   id: number;
-//   title: string;
-//   date: { day: string; month: string };
-//   image: string;
-// }
 
 const WhatIsRsuPage: React.FC = () => {
   const impactQuadrants: ImpactQuadrant[] = [
@@ -45,44 +39,6 @@ const WhatIsRsuPage: React.FC = () => {
     }
   ];
 
-  // const newsItems: NewsItem[] = [
-  //   {
-  //     id: 1,
-  //     title: "DRSU-UNP e INDECI organizan Seminario \"Gestión reactiva del riesgo de desastres\"",
-  //     date: { day: "04", month: "OCT" },
-  //     image: "/images/noticias1.jpg"
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "DRSU y Gore unirán esfuerzos por el agua potable en zonas rurales",
-  //     date: { day: "04", month: "OCT" },
-  //     image: "/images/noticias2.jpg"
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "DRSU UNP camina contra la Trata de Personas",
-  //     date: { day: "26", month: "SEP" },
-  //     image: "/images/noticias3.jpg"
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "¡Formación integral para voluntarios: ¡lenguaje de señas, seguridad y más!",
-  //     date: { day: "25", month: "SEP" },
-  //     image: "/images/noticias4.jpg"
-  //   },
-  //   {
-  //     id: 5,
-  //     title: "Ciclo de Conferencias RSU: Proyectos que transforman la sociedad",
-  //     date: { day: "25", month: "SEP" },
-  //     image: "/images/noticias5.jpeg"
-  //   },
-  //   {
-  //     id: 6,
-  //     title: "¡Proyectos, alegría y compromiso en la Feria RSU!",
-  //     date: { day: "25", month: "SEP" },
-  //     image: "/images/noticias6.jpg"
-  //   }
-  // ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
