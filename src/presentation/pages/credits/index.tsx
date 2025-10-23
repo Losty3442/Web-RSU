@@ -24,7 +24,7 @@ const developers: Developer[] = [
   {
     id: 2,
     name: "Gómez Carnero Luis Alonso",
-    role: "Co-líder Principal",
+    role: "Co-líder",
     description: "Estudiante de Ingeniería Informática - Coordinación técnica y desarrollo integral",
     icon: <Code className="w-6 h-6" />,
     color: "from-purple-500 to-purple-600"
@@ -32,7 +32,7 @@ const developers: Developer[] = [
   {
     id: 3,
     name: "Castro Herrera Fermin Aldahir",
-    role: "Co-líder Secundario",
+    role: "Co-líder",
     description: "Estudiante de Ingeniería Informática - Desarrollo integral y coordinación",
     icon: <Database className="w-6 h-6" />,
     color: "from-green-500 to-green-600"
